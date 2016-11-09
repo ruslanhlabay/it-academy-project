@@ -1,0 +1,31 @@
+
+
+.testimonials {
+  background: black;
+  color: white;
+
+}
+
+.container-testimonials {
+  display: flex;
+  max-width: 670px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.testimonials .container-testimonials, .testimonials__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__logo {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ff5943;
+  margin: 5%;
+  transform-origin: center center;
+  transform: rotate(45deg);
+}

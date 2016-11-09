@@ -1,25 +1,28 @@
 .featured-products {
   display: flex;
+  flex-flow: column;
   padding-top: 1em;
 }
 
 .featured-products .title {
+  display: flex;
   font-size: 1.1333em;
   line-height: 1.2941;
 }
 
 .featured-products-list {
   display: flex;
-  list-style: none;
-  padding: 0;
+
 }
 
 .featured-product {
+
   flex-basis: 25%;
   flex-shrink: 0;
-  box-sizing: border-box;
   border: 1px solid #e6e6e6;
   text-align: center;
+
+
 }
 .featured-product + .featured-product {
   border-left: none;
@@ -86,13 +89,13 @@
 }
 
 .product-actions .additional-links .to-favorites {
-  background-image: url(/images/icons/icon-fav.png);
+  background-image: url(images/icons/icon-fav.png);
 }
 .product-actions .additional-links .to-compare {
-  background-image: url(/images/icons/icon-compare.png);
+  background-image: url(images/icons/icon-compare.png);
 }
 .product-actions .additional-links .zoom  {
-  background-image: url(/images/icons/icon-zoom.png);
+  background-image: url(images/icons/icon-zoom.png);
 }
 
 .featured-product:hover .product-actions:before,

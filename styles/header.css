@@ -1,0 +1,86 @@
+.header-top {
+  background-color: #2b2b2b;
+  color: #7f7f7f;
+  font-size: 0.875em;
+  height: 2.267em;
+  line-height: 2.267em; /*vertical-align*/
+}
+
+.header__phone {
+  float: left;
+  width: 50%;
+  font-style: normal;
+}
+
+.header__user-links {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.header {
+  height: 167px;
+  background: #232323;
+}
+
+.header__logo, .header__menu {
+  float: left;
+}
+
+.header__logo {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  width: 70%;
+}
+
+.header__search {
+  float: right;
+  width: 30%;
+}
+
+.logo__pic {
+  display: block;
+  max-width: 166px;
+  max-height: 49px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.search {
+  position: relative;
+  padding-top: 34px;
+}
+
+.search__input {
+  padding: 10px 40px 10px 35px;
+  background: #232323;
+  border: 1px solid #323232;
+  border-radius: 44px;
+  width: 100%;
+
+}
+
+.search__button {
+  background: url(images/header/icon-search.png) 0 0 no-repeat;
+  width: 44px;
+  height: 44px;
+  display: block;
+  border: none;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  margin-top: 9px;
+}
+
+.header__menu {
+  display: flex;
+  padding-top: 10px;
+  width: 70%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
