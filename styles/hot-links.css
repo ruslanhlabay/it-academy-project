@@ -1,0 +1,11 @@
+.product-actions .additional-links .to-favorites {
+  background-image: url(images/icons/icon-fav.png);
+}
+
+.product-actions .additional-links .to-compare {
+  background-image: url(images/icons/icon-compare.png);
+}
+
+.product-actions .hotlinks .mail {
+  background-image: url(images/icons/icon-zoom.png);
+}
