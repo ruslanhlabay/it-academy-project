@@ -22,9 +22,9 @@
 
 
 .testimonials h3 {
+  font-family: 'Myriad-Pro-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 40px;
   color: rgb(255, 255, 255);
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 1.5;
 
@@ -33,13 +33,13 @@
 .testimonials__line {
   width: 20px;
   height: 2px;
-  border-bottom: 2px solid #ff5943;
+  border: 2px solid #be926f;
 }
 
 .testimonials__text {
-  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 17px;
-    color: rgb(204, 204, 204);
+  color: rgb(204, 204, 204);
   line-height: 1.647;
   text-align: center;
   padding-top: 1em;
@@ -51,7 +51,7 @@
   background-color: white;
   height: 36px;
   width: 36px;
-  border: 2px solid rgb(167, 211, 232);
+  border: 2px solid #be926f;
   margin: 1em;
   transform-origin: center center;
   transform: rotate(45deg);

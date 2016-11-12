@@ -1,20 +1,21 @@
-.new-posts{
+.new-posts {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.new-posts  .container {
+.new-posts .container {
   display: flex;
-  flex-direction:column;
- }
+  flex-direction: column;
 
- .new-posts-title {
-   display:flex;
-   justify-content: center;
-   padding-top:1em;
-   font-size: 1.1333em;
-   line-height: 1.2941;
-   border-top: 1px solid #e6e6e6;
+}
+
+.new-posts-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-size: 1.1333em;
+  line-height: 1.2941;
+  border-top: 1px solid #e6e6e6;
 }
 
 .new-posts-list {
@@ -24,26 +25,56 @@
   justify-content: space-between;
 }
 
-
-
-.new-post {
+.new-post-box {
   display: flex;
   flex-flow: column;
   flex-basis: 25%;
   flex-shrink: 0;
   text-align: center;
   align-items: center;
- 
 
+}
+
+.new-post-title {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.333;
+  width: 238px;
+  height: 38px;
+}
+
+.new-post-date {
+  font-size: 14px;
+  font-family: Montserrat-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(153, 153, 153);
+  line-height: 1.714;
+
+}
+
+.new-post-category {
+  color: #7f9f5d;
+  font-size: 12px;
+  font-family: Montserrat-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 2;
 }
 
 .new-post-underline {
   display: flex;
   width: 270px;
-  border-bottom: 1px solid rgba(100,100,100, 0.5);
+  border-bottom: 1px solid #e6e6e6;
 }
 
-.new-post:hover
-.new-post-underline {
-  border-bottom: 1px solid rgba(100,100,100, 1);
+.new-post-box:hover .new-post-underline {
+  border-bottom: 1px solid #cc9966;
+}
+
+.new-post-box:hover .new-post-title {
+  color: rgb(51, 51, 51);
+}
+
+.new-post-box:hover .new-post-date {
+  color: #999999;
 }
