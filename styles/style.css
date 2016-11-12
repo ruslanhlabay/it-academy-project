@@ -1,0 +1,80 @@
+@import url(structure.css);
+@import url(common-classes.css);
+@import url(header_float_orig.css);
+@import url(products-list.css);
+@import url(new-posts.css);
+@import url(testimonials.css);
+@import url(subscription.css);
+@import url(footer.css);
+
+
+
+.slider {
+  padding-top: 30px;
+}
+
+.slider  .container {
+
+  background: url(images/slider/slider1140.jpg) center center no-repeat;
+  height: 468px;
+
+}
+
+.button-shop-now-box {
+  text-decoration: none;
+  background: #cc9966;
+  color: #ffffff;
+  display: inline;
+}
+
+
+
+.clients {
+  padding: 1em 0;
+}
+
+.clients .container ul {
+  padding: 2em 0;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: red;
+
+}
+
+
+
+.hot-links {
+  background: #f8f8f8;
+  color: #333333;
+  padding: 1em 0 1em 0;
+}
+
+.hot-links .container ul{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+
+}
+
+
+
+.contacts {
+  padding: 1em 0;
+
+}
+
+.contacts .container {
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.contacts__call-us-phone {
+  font-style: normal;
+}

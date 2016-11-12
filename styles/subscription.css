@@ -1,0 +1,13 @@
+.subscription {
+  display: flex;
+}
+
+.subscription .container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.subscription__input {
+  padding: 1em 0;
+}

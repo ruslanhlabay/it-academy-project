@@ -1,28 +1,28 @@
 .header-top {
-  display: flex;
-  justify-content: space-between;
   background-color: #2b2b2b;
   height: 2.267em;
   line-height: 2.267em; /*vertical-align*/
 
 }
 
-  .header-top a {
+.header-top a {
   font-size: .875em;
   line-height: 1.846;
   color: #999999;
+
 }
 
 
 .header__phone {
- display: flex;
-  flex-basis: 50%;
+  float: left;
+  width: 50%;
   font-style: normal;
 }
 
 .header__user-links {
-  display: flex;
-  flex-basis: 50%;
+  float: right;
+  width: 50%;
+  text-align: right;
 }
 
 .header {
@@ -31,7 +31,7 @@
 }
 
 .header__logo, .header__menu {
-  display: flex;
+  float: left;
 }
 
 .header__logo {
@@ -41,8 +41,7 @@
 }
 
 .header__search {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
   width: 30%;
 }
 
@@ -57,7 +56,6 @@
 }
 
 .search {
-
   position: relative;
   padding-top: 34px;
 }
@@ -86,12 +84,11 @@
 .header__menu {
   display: flex;
   padding-top: 10px;
-
+  width: 60%;
 }
 
 .menu__list {
   display: flex;
   flex-grow: 1;
-  flex-basis: 50%;
   justify-content: space-between;
 }
