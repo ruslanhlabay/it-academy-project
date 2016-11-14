@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Myriad-Pro-Regular' ;
-  src: url('fonts/MYRIADPROREGULAR.ttf') format('truetype');
+  src: url('fonts/Myriad-Pro-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -20,4 +20,10 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
