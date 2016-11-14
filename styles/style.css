@@ -6,6 +6,7 @@
 @import url(new-posts.css);
 @import url(testimonials.css);
 @import url(subscription.css);
+@import url(hot-links.css);
 @import url(footer.css);
 
 
@@ -47,20 +48,6 @@
 
 }
 
-
-
-.hot-links {
-  background: #f8f8f8;
-  color: #333333;
-  padding: 1em 0 1em 0;
-}
-
-.hot-links .container ul{
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-
-}
 
 
 

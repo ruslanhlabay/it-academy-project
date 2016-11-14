@@ -1,10 +1,20 @@
 
 .subscription .container {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
 }
 
-.subscription__input {
-  padding: 1em 0;
+.subscription-newsletter {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 550px;
+  margin-right: 30px;
+}
+
+.subscription-input {
+  display: flex;
+  flex: 1 1 550px;
+  align-self: center;
 }

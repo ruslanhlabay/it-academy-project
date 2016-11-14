@@ -36,9 +36,9 @@
 
     <div class="header__search">
       <div class="search">
-        <form action="" class="search__form">
-          <input type="text" name="" id="" placeholder="Search Products..." class="search__input">
-          <input type="button" value="" class="search__button">
+        <form class="search__form">
+          <input type="text" placeholder="Search Products..." class="search__input">
+          <button type="button" class="search__button"></button>
         </form>
       </div>
     </div>
@@ -247,7 +247,7 @@
         <div class="product-price"><s>100$</s>92$</div>
       </li>
       <li class="featured-product">
-        <div class="product-title">>Cloverfield Wilcot Chair</div>
+        <div class="product-title">Cloverfield Wilcot Chair</div>
         <div class="product-category">Office</div>
         <div class="product-actions">
           <img src="images/product/product-item2.jpg" alt=">Cloverfield Wilcot Chair" width="210" height="210">
@@ -283,7 +283,7 @@
             <div class="new-post-category" style="color: #7f9f5d">CARE WOOD</div>
             <div class="new-post-title">How to Care for Wood Furniture</div>
             <div class="new-post-date">
-              <time>  16 July</time>at<time>15:44</time>
+              <time datetime="2015-07-16T15:44">16 July at 15:44</time>
             </div>
           </a>
           <div class="new-post-underline"></div>
@@ -297,7 +297,7 @@
             <div class="new-post-category" style="color: #538dc8">FURNITURE</div>
             <div class="new-post-title">Ceramic Bowl Planter with Wooden Plinth</div>
             <div class="new-post-date">
-              <time>  16 July</time>at<time>15:44</time>
+              <time datetime="2015-07-14T13:03">14 July at 13:03</time>
             </div>
           </a>
           <div class="new-post-underline"></div>
@@ -309,9 +309,9 @@
                    height="210">
             </div>
             <div class="new-post-category" style="color: #a677c7">CATEGORY</div>
-            <div class="new-post-title">Ceramic Bowl Planter with Wooden Plinth</div>
+            <div class="new-post-title">Ceramic Bowl Planter with Wooden Plinth 111 111111111111111 111111</div>
             <div class="new-post-date">
-              <time>  16 July</time>at<time>15:44</time>
+              <time datetime="2015-07-12T17:48">12 July at 17:48</time>
             </div>
           </a>
           <div class="new-post-underline"></div>
@@ -324,7 +324,7 @@
             <div class="new-post-category" style="color: #cd7b87">BEAUTY</div>
             <div class="new-post-title">This version of About A Chair</div>
             <div class="new-post-date">
-              <time>  16 July</time>at<time>15:44</time>
+              <time datetime="2015-07-10T09:37">10 July at 09:37</time>
             </div>
           </a>
           <div class="new-post-underline"></div>
@@ -350,16 +350,23 @@
 
 <div class="subscription">
   <div class="container">
-    <div class="subscription__newsletter">
+    <div class="subscription-newsletter">
       <h4>NEWSLETTER</h4>
       Keep up on our always evolving product features and technology.
       Enter your e-mail and subscribe to our newsletter.
     </div>
-
-    <form action="#" class="subscription__input">
+    <div class="subscription-input">
+      <form action="#" class="signup">
       <input type="search" placeholder="Email address"/>
       <button>SUBSCRIBE</button>
     </form>
+    </div>
+    <!--
+        <form class="container">
+          <label for="exampleEmailInput">Подпишитесь на рассылку</label>
+          <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+          <input class="button-primary" type="submit" value="OK">
+        </form>-->
 
 
   </div>
@@ -367,12 +374,12 @@
 
 <div class="hot-links">
   <div class="container">
-    <ul>
+    <ul class="hot-links-list">
       <li class="free-shipping">
-        <a href="">FREE SHIPPING</a>
+        <div>FREE SHIPPING</div>
       </li>
       <li class="customer-support">
-        <a href="">CUSTOMER SUPPORT</a>
+        <div>CUSTOMER SUPPORT</div>
       </li>
       <li class="money-back">
         <a href="">15 DAYS MONEY BACK</a>
@@ -434,15 +441,15 @@
     <div class="footer__social">
       <ul>
         <li>
-          <a href="http:\\google.com" class="footer__social-google" title="google+">
+          <a href="http://google.com" class="footer__social-google" title="google+">
           </a>
         </li>
         <li>
-          <a href="http:\\twitter.com" class="footer__social-twitter" title="twitter">
+          <a href="http://twitter.com" class="footer__social-twitter" title="twitter">
           </a>
         </li>
         <li>
-          <a href="http:\\facebook.com" class="footer__social-facebook" title="facebook">
+          <a href="http://facebook.com" class="footer__social-facebook" title="facebook">
           </a>
         </li>
       </ul>

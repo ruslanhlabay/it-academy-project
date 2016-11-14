@@ -1,18 +1,23 @@
-/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url('fonts/Montserrat-Regular.eot') format('eot'),
-  url('fonts/Montserrat-Regular.woff') format('woff'),
-  url('fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Myriad-Pro-Regular' ;
-  src: url('fonts/MYRIADPROREGULAR.eot') format('eot'),
-  url('fonts/MYRIADPROREGULAR.woff') format('woff'),
-  url('fonts/MYRIADPROREGULAR.ttf') format('truetype');
+  src: url('fonts/MYRIADPROREGULAR.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
