@@ -109,3 +109,18 @@
 .featured-product:hover .product-actions .additional-links {
   opacity: 1;
 }
+
+@media (max-width: 1200px) {
+  .featured-products-list {
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-products-list {
+    max-width: 270px;
+    flex-wrap: wrap;
+  }
+}
+

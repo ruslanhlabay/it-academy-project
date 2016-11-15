@@ -1,27 +1,28 @@
 .header-top {
   background-color: #2b2b2b;
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
-
 .header-top .container {
   display: flex;
   height: 2.267em;
   line-height: 2.267em; /*vertical-align*/
-  color: #3b3b3b;
-  font-size: 13px;
 }
-
 .header-top a {
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #666666;
   font-size: 14px;
 }
 
+.header-top span {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #3b3b3b;
+  font-size: 12px;
+  padding-top: 2px;
+}
 .header-top-phone {
   display: flex;
   flex-basis: 50%;
   font-style: normal;
 }
-
 .header-top-userlinks {
   display: flex;
   justify-content: flex-end;
@@ -29,27 +30,19 @@
 }
 
 .header {
-  height: 167px;
+
   background: #232323;
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .header .container {
   display: flex;
-  color: #ffffff;
-  font-size: 16px;
 }
 
 .header-logo {
   display: flex;
   padding-top: 30px;
   padding-bottom: 25px;
-  flex-basis: 50%;
-  flex-grow: 0;
-}
-
-.header-search {
-  display: flex;
-  justify-content: flex-end;
   flex-basis: 50%;
   flex-grow: 0;
 }
@@ -63,6 +56,15 @@
   display: inline-block;
 }
 
+/*  ----------------------  SEARCH FORM ----------------------- */
+.header-search {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+  flex-grow: 0;
+  order: 1;
+}
+
 .search {
   position: relative;
   padding-top: 34px;
@@ -72,11 +74,12 @@
   padding: 10px 40px 10px 35px;
   background: #232323;
   border: 1px solid #323232;
-  border-radius: 44px;
+  border-radius: 46px;
   width: 100%;
 }
 
 .search-button {
+
   background: url(images/header/icon-search.png) 0 0 no-repeat;
   width: 44px;
   height: 44px;
@@ -84,15 +87,17 @@
   border: none;
   position: absolute;
   right: 18px;
-  top: 50%;
+  top: 36%;
   margin-top: 9px;
 }
 
+/*  ----------------------  M E N U ----------------------- */
 .header-menu {
   display: flex;
-  padding-top: 10px;
-  flex-basis: 60%;
+  padding: 10px 0 10px 0;
+  flex-basis: 50%;
   flex-grow: 0;
+  order: 1;
 }
 
 .menu-list {
@@ -100,3 +105,55 @@
   flex-grow: 1;
   justify-content: space-between;
 }
+
+.menu-list a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.menu-list a:hover {
+  color: #be926f;
+}
+
+@media (max-width: 951px) {
+  .header-menu {
+
+    flex-basis: 65%;
+
+  }
+}
+
+@media (max-width: 851px) {
+  .header-menu {
+
+    flex-basis: 80%;
+
+  }
+}
+
+@media (max-width: 601px) {
+  .menu-list {
+    flex-flow: column;
+
+  }
+
+  .header-menu {
+    padding: 5px 0 5px 0;
+    align-self: flex-start;
+    order: 1;
+  }
+
+  .header .container {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .header-search {
+    order: -1;
+  }
+
+  .search {
+    padding-top: 5px;
+  }
+}
+

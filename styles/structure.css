@@ -24,13 +24,6 @@ body {
   margin: 0 auto;
 }
 
-.clearfix:after {
-  content: '';
-  display: block;
-  width: 100%;
-  clear: both;
-}
-
 ul, p {
   padding: 0;
   margin: 0;
