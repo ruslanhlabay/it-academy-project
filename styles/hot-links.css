@@ -2,6 +2,11 @@
   background: #f8f8f8;
   color: #333333;
   padding: 1em 0 1em 0;
+  font-family: 'Montserrat-SemiBold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 4;
+  text-align: center;
 }
 
 .hot-links .container ul {

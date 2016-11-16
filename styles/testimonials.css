@@ -22,9 +22,11 @@
 
 
 .testimonials h3 {
-  font-family: 'Myriad-Pro-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Montserrat-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 40px;
-  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #ffffff;
   text-transform: uppercase;
   line-height: 1.5;
 
@@ -39,7 +41,7 @@
 .testimonials__text {
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 17px;
-  color: rgb(204, 204, 204);
+  color: #cccccc;
   line-height: 1.647;
   text-align: center;
   padding-top: 1em;

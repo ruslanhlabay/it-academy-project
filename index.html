@@ -10,7 +10,9 @@
 
 <body>
 
-<div class="header-top">
+<header class="header">
+
+  <div class="header-top">
   <div class="container">
 
     <address class="header-top-phone">
@@ -24,34 +26,46 @@
   </div>
 </div>
 
-<header class="header">
+
   <div class="container">
     <div class="header-logo">
       <a href="#" class="logo">
         <img src="styles/images/header/logo.png" height="49" width="166" alt="LOGO" class="logo__pic">
       </a>
     </div>
+
     <div class="header-search">
-      <div class="search">
-        <form class="search-form">
+      <form class="search-form">
           <input type="text" placeholder="Search Products..." class="search-input">
           <button type="button" class="search-button"></button>
-        </form>
-      </div>
+      </form>
+
     </div>
   </div>
+
   <div class="container">
+
     <nav class="header-menu">
       <ul class="menu-list">
-        <li><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="#">Living room</a></li>
         <li><a href="#">Office</a></li>
         <li><a href="#">Bedroom</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="header-cart-container">
+      <div class="header-cart">
+        <a href="#">
+          <span class="count">3</span>
+        </a>
+      </div>
+    </div>
+
   </div>
+
 </header>
 
 <div class="slider">
@@ -206,7 +220,7 @@
             </ul>
           </div>
         </div>
-        <div class="product-price"><s>150$</s>124$</div>
+        <div class="product-price"><s>$150&ensp;</s>&ensp;$124</div>
       </li>
       <li class="featured-product">
         <div class="product-title">Ballary Chair Hodak</div>
@@ -222,7 +236,7 @@
             </ul>
           </div>
         </div>
-        <div class="product-price"><s>85$</s>76$</div>
+        <div class="product-price"><s>$85&ensp;</s>&ensp;$76</div>
       </li>
       <li class="featured-product">
         <div class="product-title">Shayla Pendant Chair</div>
@@ -238,7 +252,7 @@
             </ul>
           </div>
         </div>
-        <div class="product-price"><s>100$</s>92$</div>
+        <div class="product-price"><s>$100&ensp;</s>&ensp;$92</div>
       </li>
       <li class="featured-product">
         <div class="product-title">Cloverfield Wilcot Chair</div>
@@ -248,13 +262,13 @@
           <div class="additional-links">
             <a href="#" class="add-to-cart">add to cart</a>
             <ul>
-              <li> <a href="#" class="to-favorites"></a></li>
+              <li><a href="#" class="to-favorites"></a></li>
               <li><a href="#" class="to-compare"></a></li>
               <li><a href="#" class="zoom"></a></li>
             </ul>
           </div>
         </div>
-        <div class="product-price"><s>150$</s>117$</div>
+        <div class="product-price"><s>$150&ensp;</s>&ensp;$117</div>
       </li>
     </ul>
 
@@ -376,10 +390,10 @@
         <div>CUSTOMER SUPPORT</div>
       </li>
       <li class="money-back">
-        <a href="">15 DAYS MONEY BACK</a>
+        <div>15 DAYS MONEY BACK</div>
       </li>
       <li class="help-center">
-        <a href="">24/7 HELP CENTER</a>
+        <div>24/7 HELP CENTER</div>
       </li>
     </ul>
   </div>
@@ -388,20 +402,32 @@
 <div class="contacts">
   <div class="container">
 
-    <address class="contacts__call-us-phone">
-      <a href="tel:1-800-277-7766">1-800-277-7766</a>
-    </address>
+    <ul class="contacts-list">
 
-    <address class="contacts__location">
-      <a href="#">
-      Moscow, Pushkin str. 32_A
-      </a>
-    </address>
+      <li class="contacts-call-us-phone">
+        <a href="tel:1-800-277-7766">
+          <div class="icon"></div>
+          Call us
+          <address class="phone">1-800-277-7766</address>
+        </a>
+      </li>
 
-    <div class="contacts__mail">
-      <a href="mailto:info@domain.com">info@domain.com</a>
+      <li class="contacts-location">
+        <a href="#">
+          <div class="icon"></div>
+          Location
+          <address>Moscow, Pushkin str. 32_A</address>
+        </a>
+      </li>
 
-    </div>
+      <li class="contacts-mail">
+        <a href="mailto:info@domain.com">
+          <div class="icon"></div>
+          Mail
+          <span>info@domain.com</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 

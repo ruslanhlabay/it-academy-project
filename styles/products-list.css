@@ -7,11 +7,40 @@
   flex-direction: column;
 }
 
-
-.featured-products .product-list-title {
-  font-size: 1.1333em;
+.product-list-title {
+  font-family: 'Montserrat-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 17px;
   line-height: 1.2941;
+  font-weight: bold;
+  color: #232323;
 }
+
+.product-title {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.2941;
+  color: #232323;
+}
+
+.product-category {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 2;
+  color: #999999;
+}
+
+.product-price {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #be926f;
+}
+
+.product-price s {
+  color: #aeaeae;
+
+}
+
 
 .featured-products-list {
   display: flex;
@@ -109,6 +138,12 @@
 .featured-product:hover .product-actions .additional-links {
   opacity: 1;
 }
+
+.featured-product:hover .product-title {
+  color: #be926f;
+}
+
+
 
 @media (max-width: 1200px) {
   .featured-products-list {

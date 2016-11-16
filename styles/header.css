@@ -1,14 +1,14 @@
 .header-top {
   background-color: #2b2b2b;
 }
-.header-top .container {
+
+.header-top > .container {
   display: flex;
   height: 2.267em;
   line-height: 2.267em; /*vertical-align*/
 }
 .header-top a {
   font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #666666;
   font-size: 14px;
 }
 
@@ -18,19 +18,35 @@
   font-size: 12px;
   padding-top: 2px;
 }
+
 .header-top-phone {
   display: flex;
   flex-basis: 50%;
   font-style: normal;
+  color: #7f7f7f;
 }
+
+.header-top-phone a {
+  color: #7f7f7f;
+}
+
+.header-top-phone a:hover,
+.header-top-userlinks a:hover {
+  text-decoration: underline;
+}
+
 .header-top-userlinks {
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
+  color: #666666;
+}
+
+.header-top-userlinks a {
+  color: #666666;
 }
 
 .header {
-
   background: #232323;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -47,13 +63,10 @@
   flex-grow: 0;
 }
 
+/* захист від установки збільшеного логотипа*/
 .logo-pic {
   max-width: 166px;
   max-height: 49px;
-}
-
-.logo {
-  display: inline-block;
 }
 
 /*  ----------------------  SEARCH FORM ----------------------- */
@@ -63,14 +76,17 @@
   flex-basis: 50%;
   flex-grow: 0;
   order: 1;
+  padding-top: 34px;
+  border: 1px solid red;
 }
 
-.search {
-  position: relative;
-  padding-top: 34px;
+.search-form {
+  display: block;
+  max-width: 300px;
 }
 
 .search-input {
+  display: block;
   padding: 10px 40px 10px 35px;
   background: #232323;
   border: 1px solid #323232;
@@ -79,19 +95,22 @@
 }
 
 .search-button {
-
+  display: block;
   background: url(images/header/icon-search.png) 0 0 no-repeat;
   width: 44px;
   height: 44px;
-  display: block;
-  border: none;
+  border: 1px solid red;
   position: absolute;
   right: 18px;
-  top: 36%;
+  top: 50px;
   margin-top: 9px;
 }
 
-/*  ----------------------  M E N U ----------------------- */
+.header-search button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*  ----------------------  M E N U   &    Cart  ----------------------- */
 .header-menu {
   display: flex;
   padding: 10px 0 10px 0;
@@ -102,6 +121,7 @@
 
 .menu-list {
   display: flex;
+  flex-direction: row;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -111,9 +131,70 @@
   font-size: 16px;
 }
 
+.header-menu li:active .menu-list a {
+  color: #be926f;
+}
+
+/* selected link */
+
 .menu-list a:hover {
   color: #be926f;
 }
+
+.header-cart-container {
+  display: flex;
+  border: 1px solid red;
+  flex-basis: 50%;
+  justify-content: flex-end;
+  flex-grow: 1;
+  order: 1;
+}
+
+.header-cart {
+
+  background-image: url(/images/header/icon-cart.png);
+  width: 17px;
+  height: 22px;
+  margin: 33px 12px 0 0;
+  position: relative;
+  font-size: 12px;
+  border: 1px solid red;
+}
+
+.header-cart .count {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #be926f;
+  border-radius: 50%;
+  line-height: 18px;
+  text-align: center;
+  top: -6px;
+  right: -8px;
+}
+
+.header-cart a {
+  color: #232323;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 951px) {
   .header-menu {
@@ -143,7 +224,7 @@
     order: 1;
   }
 
-  .header .container {
+  .header > .container {
     flex-flow: column;
     align-items: center;
   }

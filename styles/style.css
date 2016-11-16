@@ -8,6 +8,7 @@
 @import url(testimonials.css);
 @import url(subscription.css);
 @import url(hot-links.css);
+@import url(contacts.css);
 @import url(footer.css);
 
 
@@ -50,20 +51,3 @@
 }
 
 
-
-
-.contacts {
-  padding: 1em 0;
-
-}
-
-.contacts .container {
-  display: flex;
-  flex-flow: row;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
-.contacts__call-us-phone {
-  font-style: normal;
-}

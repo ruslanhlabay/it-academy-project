@@ -3,7 +3,15 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+}
 
+.subscription-newsletter h4 {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.3333;
 }
 
 .subscription-newsletter {

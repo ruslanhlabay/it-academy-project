@@ -1,0 +1,58 @@
+
+.contacts {
+  padding: 1em 0;
+
+}
+
+.contacts > .container, .contacts-list {
+  display: flex;
+}
+
+.contacts-list ul {
+  display: flex;
+
+  flex-basis: 30%;
+}
+
+.contacts-list ul li {
+  display: flex;
+
+}
+
+.contacts-list a {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.contacts-list ul li a {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.contacts-call-us-phone {
+  font-style: normal;
+}
+
+.contacts-list .icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #be926f;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contacts-list .contacts-call-us-phone > .icon {
+  background-image: url(/images/contacts/iPhone.png);
+}
+
+.contacts-list .contacts-location > .icon {
+  background-image: url(/images/contacts/Location.png);
+}
+
+.contacts-list .contacts-mail > .icon {
+  background-image: url(/images/contacts/Mail.png);
+}
