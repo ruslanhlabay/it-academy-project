@@ -46,6 +46,7 @@
   color: #666666;
 }
 
+
 .header {
   background: #232323;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -60,68 +61,71 @@
   padding-top: 30px;
   padding-bottom: 25px;
   flex-basis: 50%;
-  flex-grow: 0;
+
+  /* border: solid 1px yellowgreen;*/
+
 }
 
 /* захист від установки збільшеного логотипа*/
-.logo-pic {
+.header-logo img {
   max-width: 166px;
   max-height: 49px;
 }
 
 /*  ----------------------  SEARCH FORM ----------------------- */
-.header-search {
+.header-search-container {
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
   flex-grow: 0;
-  order: 1;
-  padding-top: 34px;
-  border: 1px solid red;
+  padding-top: 24px;
+  /* border: 1px solid red;*/
 }
 
 .search-form {
-  display: block;
-  max-width: 300px;
+  display: flex;
 }
 
 .search-input {
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.8462;
   display: block;
   padding: 10px 40px 10px 35px;
   background: #232323;
+  height: 44px;
+  width: 274px;
   border: 1px solid #323232;
-  border-radius: 46px;
-  width: 100%;
+  border-radius: 44px;
 }
 
 .search-button {
   display: block;
-  background: url(images/header/icon-search.png) 0 0 no-repeat;
+  background: url(images/header/icon-search.png) center center no-repeat;
   width: 44px;
   height: 44px;
-  border: 1px solid red;
-  position: absolute;
-  right: 18px;
-  top: 50px;
-  margin-top: 9px;
+  margin-left: -44px;
+  border-radius: 44px;
+  border-style: hidden;
 }
 
-.header-search button:hover {
+.search-form button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*  ----------------------  M E N U   &    Cart  ----------------------- */
-.header-menu {
+.header-menu-container {
   display: flex;
-  padding: 10px 0 10px 0;
-  flex-basis: 50%;
+  /*padding: 10px 0 10px 0;*/
+  flex-basis: 55%;
   flex-grow: 0;
-  order: 1;
+  /*  border: solid 1px yellow;*/
+  margin-bottom: 38px;
 }
 
 .menu-list {
   display: flex;
-  flex-direction: row;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -131,7 +135,7 @@
   font-size: 16px;
 }
 
-.header-menu li:active .menu-list a {
+.menu-list li.active a {
   color: #be926f;
 }
 
@@ -143,22 +147,20 @@
 
 .header-cart-container {
   display: flex;
-  border: 1px solid red;
-  flex-basis: 50%;
   justify-content: flex-end;
   flex-grow: 1;
-  order: 1;
+  /*  border: solid 1px lightgreen;*/
 }
 
 .header-cart {
-
-  background-image: url(/images/header/icon-cart.png);
+  display: flex;
+  background: url(images/header/icon-cart.png) center center no-repeat;
   width: 17px;
   height: 22px;
-  margin: 33px 12px 0 0;
+  /* margin: 33px 12px 0 0;*/
   position: relative;
   font-size: 12px;
-  border: 1px solid red;
+
 }
 
 .header-cart .count {
@@ -170,7 +172,7 @@
   line-height: 18px;
   text-align: center;
   top: -6px;
-  right: -8px;
+  right: -11px;
 }
 
 .header-cart a {
@@ -178,63 +180,4 @@
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 951px) {
-  .header-menu {
-
-    flex-basis: 65%;
-
-  }
-}
-
-@media (max-width: 851px) {
-  .header-menu {
-
-    flex-basis: 80%;
-
-  }
-}
-
-@media (max-width: 601px) {
-  .menu-list {
-    flex-flow: column;
-
-  }
-
-  .header-menu {
-    padding: 5px 0 5px 0;
-    align-self: flex-start;
-    order: 1;
-  }
-
-  .header > .container {
-    flex-flow: column;
-    align-items: center;
-  }
-
-  .header-search {
-    order: -1;
-  }
-
-  .search {
-    padding-top: 5px;
-  }
-}
 

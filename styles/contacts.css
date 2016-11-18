@@ -10,22 +10,24 @@
 
 .contacts-list ul {
   display: flex;
-
   flex-basis: 30%;
+  justify-content: space-around;
 }
 
 .contacts-list ul li {
   display: flex;
+  justify-content: space-around;
+}
+
+.contacts-list li a {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-grow: 1;
 
 }
 
 .contacts-list a {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
-.contacts-list ul li a {
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.2;
@@ -45,14 +47,14 @@
   background-position: center center;
 }
 
-.contacts-list .contacts-call-us-phone > .icon {
+.contacts-list .contacts-call-us-phone .icon {
   background-image: url(/images/contacts/iPhone.png);
 }
 
-.contacts-list .contacts-location > .icon {
+.contacts-list .contacts-location .icon {
   background-image: url(/images/contacts/Location.png);
 }
 
-.contacts-list .contacts-mail > .icon {
+.contacts-list .contacts-mail .icon {
   background-image: url(/images/contacts/Mail.png);
 }

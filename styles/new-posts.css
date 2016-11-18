@@ -92,15 +92,7 @@
 }
 
 @media (max-width: 1200px) {
-  .new-posts-list {
-    max-width: 600px;
-    flex-wrap: wrap;
-  }
+
 }
 
-@media (max-width: 600px) {
-  .new-posts-list {
-    max-width: 270px;
-  }
-}
 
