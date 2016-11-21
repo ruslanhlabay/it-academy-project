@@ -32,29 +32,28 @@
 
 }
 
-.testimonials__line {
+.testimonials-line {
   width: 20px;
   height: 2px;
   border: 2px solid #be926f;
 }
 
-.testimonials__text {
+.testimonials-text {
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 17px;
   color: #cccccc;
   line-height: 1.647;
   text-align: center;
   padding-top: 1em;
-  padding-bottom: 1em;
+  /*  padding-bottom: 1em;*/
 }
 
-
-.testimonials__logo {
+.testimonials-logo {
   background-color: white;
   height: 36px;
   width: 36px;
   border: 2px solid #be926f;
-  margin: 1em;
+  margin: 2em;
   transform-origin: center center;
   transform: rotate(45deg);
 

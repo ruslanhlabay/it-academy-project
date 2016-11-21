@@ -1,45 +1,60 @@
 .hot-links {
   background: #f8f8f8;
   color: #333333;
-  padding: 1em 0 1em 0;
+  border-top: 1px solid #e8e8e8;
+  /* padding-top: 0.933em;
+   padding-bottom: 0.933em;*/
   font-family: 'Montserrat-SemiBold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bold;
   line-height: 4;
-  text-align: center;
-}
-
-.hot-links .container ul {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
 }
 
 .hot-links-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.hot-links .free-shipping li {
-  font-family: 'Montserrat-SemiBold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 4;
-  color: #333333;
+.hot-links-list li {
+  display: flex;
+  flex-basis: 25%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.free-shipping li :before {
-  content: '';
-  height: 20px;
-  width: 20px;
-  background: url(images/hotlinks/free-shipping-icon.png) center center no-repeat;
-  border: 1px solid red;
+.hot-links-list .icon {
+  height: 36px;
+  width: 36px;
+  border: 2px solid #be926f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
 }
 
-.customer-support {
+.hot-links-list .free-shipping .icon {
+  background-image: url(images/hotlinks/free-shipping-icon.png);
+}
 
+.hot-links-list .customer-support .icon {
   background-image: url(images/hotlinks/customer-support-icon.png);
 }
 
-/*.product-actions .hotlinks .mail {
-  background-image: url(images/icons/icon-zoom.png);
+.hot-links-list .money-back .icon {
+  background-image: url(images/hotlinks/money-back-icon.png);
 }
-*/
+
+.hot-links-list .help-center .icon {
+  background-image: url(images/hotlinks/help-center-icon.png);
+}
+
+/*
+.hot-links-list .customer-support::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+
+  background: url(images/hotlinks/customer-support-icon.png) center center no-repeat;
+  border: 1px solid red;
+}*/
+
