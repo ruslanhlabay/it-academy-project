@@ -73,12 +73,15 @@
   .footer .container {
     flex-direction: column;
     align-items: center;
-
   }
 
-  .footer__nav, .footer__social {
-    display: inline-flex;
+  .footer__nav ul, .footer__social ul {
+
     flex-basis: 50%;
   }
 
+}
+
+.footer a:hover {
+  color: #be926f;
 }

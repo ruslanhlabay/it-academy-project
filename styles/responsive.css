@@ -1,20 +1,33 @@
 @media (max-width: 1100px) {
-  .featured-products-list {
 
+  .featured-products-list {
     flex-wrap: wrap;
   }
 
-  .new-posts-list {
+  .featured-product {
+    flex-basis: 50%;
+  }
+}
 
+@media (max-width: 1160px) {
+
+  .new-posts-list {
     flex-wrap: wrap;
+  }
+
+  .new-post-box {
+    flex-basis: 50%;
   }
 
 }
 
+
 @media (max-width: 951px) {
+
   .header-menu-container {
     flex-basis: 65%;
   }
+
 }
 
 @media (max-width: 851px) {
@@ -46,15 +59,12 @@
 
 }
 
-@media (max-width: 600px) {
-  .featured-products-list {
+@media (max-width: 610px) {
 
-    flex-wrap: wrap;
+  .featured-product, .new-post-box, .hot-links-list li {
+    flex-basis: 100%;
   }
 
-  .new-posts-list {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 480px) {

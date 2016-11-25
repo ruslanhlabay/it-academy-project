@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>keds are furniture))</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 
 <body>
@@ -25,7 +29,6 @@
 
   </div>
 </div>
-
 
   <div class="container">
 
@@ -69,26 +72,41 @@
 
 </header>
 
-<div class="slider">
-  <div class="container">
+<div class="slider container">
+  <div class="slide1">
     <a href="#">
       <img src="images/Slider_image2_HQ.jpg" alt="SHOP NOW!!! NEW COLLECTION 2015">
     </a>
+  </div>
+  <div class="slide1">
+    <a href="#">
+      <img src="images/Slider_image3_HQ.jpg" alt="SHOP NOW!!! NEW COLLECTION 2015">
+    </a>
+  </div>
+  <div class="slide1">
+    <a href="#">
+      <img src="images/Slider_image4_HQ.jpg" alt="SHOP NOW!!! NEW COLLECTION 2015">
+    </a>
+  </div>
 </div>
-</div>
+
+
+<script src="jquery-3.1.1.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="test.js"></script>
 
 
 <div class="page-body">
 
-<div class="featured-products">
-  <div class="container">
+  <div class="featured-products container">
+
 
     <h2 class="product-list-title">FEATURED PRODUCTS</h2>
 
     <ul class="featured-products-list">
 
     <li class="featured-product">
-      <div class="product-title">Denim Chart In Slim Fit</div>
+      <div class="product-title">Denim Chart In Slim Fit 111111111111111111111</div>
       <div class="product-category">Living Room</div>
       <div class="product-actions">
         <img src="images/product/product-item1.jpg" alt="Denim Chart In Slim Fit" width="210" height="210">
@@ -153,7 +171,7 @@
     </li>
   </ul>
 </div>
-</div>
+
 
   <div class="hot-sales container">
     <ul class="block1">
@@ -168,10 +186,11 @@
       <li class="hot-sale-product">
         <img src="images/product/hot-product.jpg" alt="Hot product" width="80" height="80">
         <div class="description">
-          <div class="product-category">Bedroom</div>
-          <div class="product-title">Vintage Shelf</div>
-          <div class="product-price"><s>$83&ensp;</s>&ensp;$66</div>
+          <div class="product-category">Living room</div>
+          <div class="product-title">Silk Pillow</div>
+          <div class="product-price">$48</div>
         </div>
+      </li>
     </ul>
     <div class="block2">
       <div class="description">
@@ -299,13 +318,15 @@
 
 </div>
 
-<div class="new-posts">
-    <div class="container">
-      <h2 class="new-posts-title">NEW POSTS</h2>
-      <ul class="new-posts-list">
+  <div class="new-posts container">
+
+    <h2 class="new-posts-title">NEW POSTS</h2>
+
+    <ul class="new-posts-list">
 
         <li class="new-post-box">
-          <a href="#" class="new-post-link">
+
+          <a href="#">
             <div class="new-post-image">
               <img src="images/newposts/newpost1.jpg" alt="How to Care for Wood Furniture" width="270" height="210">
             </div>
@@ -314,11 +335,13 @@
             <div class="new-post-date">
               <time datetime="2015-07-16T15:44">16 July at 15:44</time>
             </div>
+            <div class="new-post-underline"></div>
           </a>
-          <div class="new-post-underline"></div>
+
         </li>
-        <li class="new-post-box">
-          <a href="#" class="new-post-link">
+
+      <li class="new-post-box">
+        <a href="#">
             <div class="new-post-image">
               <img src="images/newposts/newpost2.jpg" alt="Ceramic Bowl Planter with Wooden Plinth" width="270"
                    height="210">
@@ -332,7 +355,7 @@
           <div class="new-post-underline"></div>
         </li>
         <li class="new-post-box">
-          <a href="#" class="new-post-link">
+          <a href="#">
             <div class="new-post-image">
               <img src="images/newposts/newpost3.jpg" alt="Ceramic Bowl Planter with Wooden Plinth" width="270"
                    height="210">
@@ -346,7 +369,7 @@
           <div class="new-post-underline"></div>
         </li>
         <li class="new-post-box">
-          <a href="#" class="new-post-link">
+          <a href="#">
             <div class="new-post-image">
               <img src="images/newposts/newpost4.jpg" alt="This version of About A Chair" width="270" height="210">
             </div>
@@ -360,7 +383,6 @@
         </li>
 
       </ul>
-    </div>
   </div>
 
 </div> <!--  page-body -->

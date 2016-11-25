@@ -1,21 +1,19 @@
 .new-posts {
   padding-top: 1em;
-  padding-bottom: 1em;
-}
 
-.new-posts .container {
   display: flex;
   flex-direction: column;
 
 }
 
 .new-posts-title {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+   justify-content: center;*/
   padding-top: 1em;
   font-family: 'Montserrat-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.18em;
   border-top: 1px solid #e6e6e6;
@@ -31,50 +29,45 @@
 .new-post-box {
   display: flex;
   flex-flow: column;
-
-  flex-basis: 270px;
-
-
+  align-content: center;
+  text-align: center;
+  flex-basis: 25%;
+  padding-bottom: 1.6667em;
 }
 
 .new-post-image {
   display: flex;
   justify-content: center;
-
 }
 
 .new-post-title {
+  width: 210px;
   height: 50px;
-  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 18px;
   font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.333;
-  padding-left: 5px;
-  padding-right: 5px;
   color: #000000;
+  margin: 0 auto;
 }
 
 .new-post-category {
-  text-align: center;
-  font-size: 12px;
   font-family: Montserrat-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
   line-height: 2;
+
 }
 
 .new-post-date {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
   font-family: Montserrat-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: rgb(153, 153, 153);
+  color: #999999;
+  font-size: 14px;
   line-height: 1.714;
 }
 
 .new-post-underline {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
   width: 270px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -89,10 +82,6 @@
 
 .new-post-box:hover .new-post-date {
   color: #999999;
-}
-
-@media (max-width: 1200px) {
-
 }
 
 
