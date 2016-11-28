@@ -2,6 +2,7 @@
 .hot-sales {
   display: flex;
   justify-content: space-between;
+
 }
 
 .hot-sales .block1 {
@@ -37,9 +38,18 @@
   justify-content: space-around;
 }
 
+.hot-sales .block1 .description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-left: 25px;
+}
+
+
 .hot-sales .block2 .description {
   display: flex;
   flex-direction: column;
+  padding-top: 2em;
   padding-left: 25px;
 }
 

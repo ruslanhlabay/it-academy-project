@@ -34,6 +34,23 @@
   .header-menu-container {
     flex-basis: 80%;
   }
+
+  .hot-sales {
+    flex-wrap: wrap;
+
+  }
+
+  .hot-sales .block1 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .hot-sales .block2 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+
 }
 
 @media (max-width: 651px) {
@@ -56,6 +73,17 @@
     /*justify-content: center;*/
     /*align-items: center*/
   }
+
+  .hot-sales .block1 {
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 100%;
+    /*  flex-wrap: wrap;
+      flex-basis: 100%;
+      max-width: 100%;*/
+  }
+
+
 
 }
 
