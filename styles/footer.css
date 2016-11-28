@@ -1,7 +1,6 @@
-
 .footer {
-  border-top: 1px solid rgba(153, 153, 153, 0.5);
-  padding: 0;
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 0 30px 0;
 }
 
 .footer .container {
@@ -9,64 +8,72 @@
   justify-content: space-between;
 }
 
-.footer__copyright a, .footer__nav a {
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 1.846;
-  color: #999999;
-
+.footer-copyright {
+  width: 245px;
 }
 
-.footer__copyright {
-  display: flex;
-  flex-basis: 35%;
+.footer-nav {
+  width: 300px;
 }
 
-.footer__nav {
+.footer-nav ul {
   display: flex;
-  flex-basis: 50%;
-}
-
-.footer__social {
-  display: flex;
-  flex-basis: 15%;
-}
-
-.footer__nav ul {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
-
-.footer__social ul {
-  display: flex;
-  flex-grow: 1;
+  flex-basis: 100%;
   justify-content: space-between;
 }
 
-.footer__social a {
+.footer-social {
+  width: 130px;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.footer-copyright a, .footer-nav a {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.8462;
+  color: #999999;
+}
+
+.footer-social a {
   display: flex;
   width: 25px;
   height: 25px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
-.footer__social-google {
+.footer-social-google {
   background: url(images/footer/google.png) center center no-repeat;
+  transition: background 250ms;
 }
 
-.footer__social-twitter {
+.footer-social-twitter {
   background: url(images/footer/twitter.png) center center no-repeat;
+  transition: background 250ms;
 }
 
-.footer__social-facebook {
+.footer-social-facebook {
   background: url(images/footer/facebook.png) center center no-repeat;
+  transition: background 250ms;
 }
 
-.footer__social-google:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.footer-social-google:hover {
+  background: url(images/footer/google_hovered.png) center center no-repeat;
+}
+
+.footer-social-twitter:hover {
+  background: url(images/footer/twitter_hovered.png) center center no-repeat;
+}
+
+.footer-social-facebook:hover {
+  background: url(images/footer/facebook_hovered.png) center center no-repeat;
+}
+
+.footer a:hover {
+  color: #be926f;
 }
 
 @media (max-width: 761px) {
@@ -74,14 +81,5 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .footer__nav ul, .footer__social ul {
-
-    flex-basis: 50%;
-  }
-
 }
 
-.footer a:hover {
-  color: #be926f;
-}

@@ -1,5 +1,7 @@
 
-.subscription .container {
+.subscription {
+  margin-top: 1em;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -17,12 +19,45 @@
 .subscription-newsletter {
   display: flex;
   flex-direction: column;
-  flex: 1 1 550px;
-  margin-right: 30px;
+  flex: 1 1 500px;
+
+  border: 1px solid orange;
 }
 
 .subscription-input {
   display: flex;
-  flex: 1 1 550px;
+  flex: 1 1 670px;
   align-self: center;
+  justify-content: flex-end;
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.9375;
+}
+
+.subscription-input input {
+  width: 390px;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.subscription-input button {
+  width: 190px;
+  height: 50px;
+  background: #f8f8f8;
+  border: 1px solid #be926f;
+  font-size: 18px;
+  line-height: 1.72;
+  color: #333333;
+  position: relative;
+}
+
+.subscription-input button::before {
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  background-image: url(images/icons/subscribe-icon.png);
+  border: 1px solid red;
 }

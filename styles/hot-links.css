@@ -17,10 +17,11 @@
 
 .hot-links-list li {
   display: flex;
-  flex-basis: 25%;
+  /* flex-basis: 20%;*/
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 12px;
 }
 
 .hot-links-list .icon {
