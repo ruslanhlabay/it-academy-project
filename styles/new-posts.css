@@ -1,5 +1,5 @@
 .new-posts {
-  margin-top: 2em;
+
   display: flex;
   flex-direction: column;
   /*border-top: 1px solid #e6e6e6;*/
@@ -9,31 +9,35 @@
   border-top: 1px solid #e6e6e6;
 }
 
-.new-posts-title {
-  margin-top: 1em;
+.new-posts-title, .related-products-title {
+
+  /* margin-bottom: 30px;*/
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold;
 }
 
-
-.new-posts-title .arrow .icon {
+.new-posts-title .arrow .icon,
+.related-products-title .arrow .icon {
   width: 13px;
   height: 23px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.new-posts-title .left-arrow .icon {
+.new-posts-title .left-arrow .icon,
+.related-products-title .left-arrow .icon {
   background-image: url(images/icons/left_arrow.png);
 }
 
-.new-posts-title .right-arrow .icon {
+.new-posts-title .right-arrow .icon,
+.related-products-title .right-arrow .icon {
   background-image: url(images/icons/right_arrow.png);
 }
 
-.new-posts-title .arrow a {
+.new-posts-title .arrow a,
+.related-products-title .arrow a {
   display: flex;
   font-size: 13px;
   text-align: center;
@@ -43,7 +47,8 @@
   color: #999999;
 }
 
-.new-posts-title h2 {
+.new-posts-title h2,
+.related-products-title h2 {
   margin-top: 0;
   display: flex;
   font-size: 18px;
@@ -53,8 +58,7 @@
   color: #232323;
 }
 
-
-.new-posts-list {
+.new-posts-list, .related-products-list {
   padding-top: 1.4667em;
   display: flex;
   justify-content: space-between;
@@ -117,4 +121,11 @@
   color: #999999;
 }
 
+.new-post-title .left-arrow:hover .new-posts-title .left-arrow .icon {
+  background-image: url(images/icons/left_arrow-hovered.png);
+}
+
+.new-post-title .left-arrow:hover .new-posts-title .left-arrow {
+  color: #be926f;
+}
 

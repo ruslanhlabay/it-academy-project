@@ -9,7 +9,7 @@
 }
 
 .footer-copyright {
-  width: 245px;
+  width: 250px;
 }
 
 .footer-nav {
@@ -46,30 +46,30 @@
 }
 
 .footer-social-google {
-  background: url(images/footer/google.png) center center no-repeat;
+  background: url(images/footer/google.png) no-repeat center center;
   transition: background 250ms;
 }
 
 .footer-social-twitter {
-  background: url(images/footer/twitter.png) center center no-repeat;
+  background: url(images/footer/twitter.png) no-repeat center center;
   transition: background 250ms;
 }
 
 .footer-social-facebook {
-  background: url(images/footer/facebook.png) center center no-repeat;
+  background: url(images/footer/facebook.png) no-repeat center center;
   transition: background 250ms;
 }
 
 .footer-social-google:hover {
-  background: url(images/footer/google_hovered.png) center center no-repeat;
+  background: url(images/footer/google_hovered.png) no-repeat center center;
 }
 
 .footer-social-twitter:hover {
-  background: url(images/footer/twitter_hovered.png) center center no-repeat;
+  background: url(images/footer/twitter_hovered.png) no-repeat center center;
 }
 
 .footer-social-facebook:hover {
-  background: url(images/footer/facebook_hovered.png) center center no-repeat;
+  background: url(images/footer/facebook_hovered.png) no-repeat center center;
 }
 
 .footer a:hover {

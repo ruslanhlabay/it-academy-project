@@ -1,0 +1,110 @@
+.description-title {
+  background: #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 30px 15px 30px 15px;
+}
+
+.description-title h1 {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 0.8;
+  color: #232323;
+}
+
+.description-title h4 {
+  font-size: 14px;
+  color: #999999;
+}
+
+.description-title h4 > span {
+  color: #666666;
+}
+
+.decription-box {
+  margin-bottom: 60px;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+  /*  min-width: 320px;
+  max-width: 800px;
+   padding: 0px;
+   margin: 0 auto;*/
+}
+
+/* стили секций с содержанием */
+
+section {
+  display: none;
+  padding: 20px 15px 40px 20px;
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #be926f;
+}
+
+section h4 {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333333;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+.tabs input {
+  display: none;
+}
+
+/* стили вкладок (табов) */
+.tabs label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
+  border: 1px solid #be926f;
+  background: #ffffff;
+  border-radius: 1px 1px 0 0;
+}
+
+/* изменения стиля заголовков вкладок при наведении */
+.tabs label:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+/* стили для активной вкладки */
+.tabs input:checked + label {
+  color: #be926f;
+  border: 1px solid #be926f;
+  border-top: 2px solid #be926f;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+/* активация секций с помощью переключателя :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+
+/* медиа запросы для различных типов носителей */
+@media screen and (max-width: 680px) {
+  .tabs label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tabs label {
+    padding: 15px;
+  }
+}

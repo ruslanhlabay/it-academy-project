@@ -15,11 +15,10 @@
 
 
 .slider {
-  padding-top: 30px;
 }
 
 .slide1 div {
-  display: none;
+  display: hidden;
 }
 
 div.slide1:nth-child(1) {

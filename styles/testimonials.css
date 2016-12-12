@@ -3,17 +3,15 @@
 .testimonials {
   background-color: rgb(41, 41, 41);
   color: white;
-  margin-top: 2em;
 }
 
 .container-testimonials {
 
   max-width: 845px;
-
   margin: 0 auto;
 }
 
-.testimonials .container-testimonials, .testimonials__text {
+.testimonials .container-testimonials, .testimonials-text {
   display: flex;
   flex-flow: column;
   justify-content: center;

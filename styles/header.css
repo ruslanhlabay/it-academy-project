@@ -50,6 +50,7 @@
 .header {
   background: #232323;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  margin-bottom: 30px;
 }
 
 .header .container {
