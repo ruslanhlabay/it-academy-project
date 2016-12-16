@@ -1,0 +1,14 @@
+
+.clients {
+  padding: 1em 0;
+}
+
+.clients .container ul {
+  padding: 2em 0;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+}

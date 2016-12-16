@@ -2,8 +2,10 @@
 @import url(fonts.css);
 @import url(common-classes.css);
 @import url(header.css);
+@import url(slider.css);
 /* @import url(header_float_orig.css); */
 @import url(products-list.css);
+@import url(clients.css);
 @import url(hot-sales.css);
 @import url(new-posts.css);
 @import url(testimonials.css);
@@ -12,49 +14,4 @@
 @import url(contacts.css);
 @import url(footer.css);
 @import url(responsive.css);
-
-
-.slider {
-}
-
-.slide1 div {
-  display: hidden;
-}
-
-div.slide1:nth-child(1) {
-  display: flex;
-}
-
-.slider img {
-  max-width: 1170px;
-  max-height: 480px;
-  width: 100%;
-  height: auto;
-}
-
-.button-shop-now-box {
-  text-decoration: none;
-  background: #cc9966;
-  color: #ffffff;
-  display: inline;
-}
-
-
-
-
-
-
-.clients {
-  padding: 1em 0;
-}
-
-.clients .container ul {
-  padding: 2em 0;
-  border: 1px solid rgba(153, 153, 153, 0.5);
-  display: flex;
-  flex-flow: row;
-  flex-grow: 1;
-  justify-content: space-around;
-  align-items: center;
-}
 

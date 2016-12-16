@@ -1,0 +1,28 @@
+.slider {
+}
+
+.slide1 div {
+  display: none;
+}
+
+div.slide1:nth-child(1) {
+  display: flex;
+}
+
+.slider img {
+  max-width: 1170px;
+  max-height: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.button-shop-now-box {
+  text-decoration: none;
+  background: #cc9966;
+  color: #ffffff;
+  display: inline;
+}
+
+
+
+
