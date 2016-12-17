@@ -7,7 +7,10 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/detail.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="plugins/fancy/jquery.fancybox.css" type="text/css" media="screen"/>
+
 
 </head>
 <body>
@@ -77,6 +80,57 @@
 </div>
 
 <div class="product-detail container">
+
+  <div class="product-preview">
+    <div class="thumbs">
+
+      <a class=""
+         rel="group"
+         href="images/product/details/product_image1.jpg"
+         title="image1">
+        <img src="images/product/details/product_image1_s.jpg" alt=""/>
+      </a>
+
+      <a class=""
+         rel="group"
+         href="images/product/details/product_image2.jpg"
+         title="image2">
+        <img src="images/product/details/product_image2_s.jpg" alt=""/>
+      </a>
+
+      <a class=""
+         rel="group"
+         href="images/product/details/product_image3.jpg"
+         title="image3">
+        <img src="images/product/details/product_image3_s.jpg" alt=""/>
+      </a>
+
+
+      <a class=""
+         rel="group"
+         href="images/product/details/product_image2.jpg"
+         title="image2">
+        <img src="images/product/details/product_image2_s.jpg" alt=""/>
+      </a>
+
+      <a class=""
+         rel="group"
+         href="images/product/details/product_image3.jpg"
+         title="image3">
+        <img src="images/product/details/product_image3_s.jpg" alt=""/>
+      </a>
+
+    </div>
+
+    <div class="product-image">
+      <img id="product-image"
+           src="images/product/details/product_image1.jpg" alt=""/>
+    </div>
+  </div>
+
+  <div class="product-actions">
+
+  </div>
 
 </div>
 
@@ -367,6 +421,37 @@
 
   </div>
 </footer>
+
+
+<script src="plugins/jquery-3.1.1.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancy/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+  $(function () {
+    $('.product-preview .thumbs').slick({
+      slidesToShow: 3,
+      vertical: true,
+      verticalSwiping: true,
+      arrows: false
+    });
+
+    $('.thumbs a').on('click', function (e) {
+      e.preventDefault();
+      var picLink = $(this).attr('href');
+      var $image = $('#product-image');
+      $image.fadeTo(200, 0, function () {
+        $image.attr('src', picLink);
+        $image.fadeTo(800, 1)
+      });
+      /*   $('#product-image').attr('src', picLink);*/
+
+    })
+
+  });
+
+</script>
 
 
 </body>
