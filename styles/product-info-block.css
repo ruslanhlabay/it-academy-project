@@ -1,0 +1,156 @@
+
+.product-info-block {
+  padding: 55px 30px 0 30px;
+}
+
+.product-rating {
+  display: flex;
+  flex-shrink: 0;
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999999;
+  margin-bottom: 25px;
+}
+
+.rating {
+  float: left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  line-height: 1.2;
+  color: #ddd;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+}
+
+.rating > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.quantity-voices {
+  padding-left: 30px;
+  align-self: center;
+}
+
+.product-specifications {
+  margin-bottom: 25px;;
+}
+
+.product-short-description {
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.product-price-in-info {
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #ff0000;
+  margin-bottom: 30px;
+}
+
+.product-price-in-info s {
+  color: #cccccc;
+}
+
+.product-color {
+  margin-bottom: 30px;
+}
+
+.product-actions-in-info {
+  display: flex;
+  flex-shrink: 0;
+  height: 60px;
+  margin-bottom: 60px;
+  /* width: 130px;
+   height: 84px;*/
+}
+
+.product-actions-in-info .add-to-cart-in-info {
+  width: 160px;
+  height: 60px;
+  background-color: #be926f;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.product-actions-in-info ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-actions-in-info .to-favorites-in-info {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999999;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(images/icons/icon-to-fav-detail.png);
+}
+
+.product-actions-in-info .to-compare-in-info {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999999;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(images/icons/icon-compare-detail.png);
+}
+
+/*
+
+.featured-product:hover .product-actions-in-info:before,
+.featured-product:hover .product-actions-in-info .additional-links-in-info {
+  opacity: 1;
+}
+
+.featured-product:hover .product-title {
+  color: #be926f;
+}
+*/

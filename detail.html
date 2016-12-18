@@ -128,14 +128,57 @@
     </div>
   </div>
 
-  <div class="product-actions">
+  <div class="product-info-block">
 
+
+    <div class="product-rating">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"/><label for="star5" title="Rocks!">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4"/><label for="star4" title="Pretty good">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="Meh">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2"/><label for="star2" title="Kinda bad">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="Sucks big time">1 star</label>
+      </div>
+      <div class="quantity-voices"> (23 review)</div>
+    </div>
+
+    <div class="product-specifications">
+      <label><input type="checkbox">In stock</label>
+      SKU: SW108 Category: Chairs
+    </div>
+
+    <div class="product-short-description">Pellentesque at neque porta, auctor felis eu, pulvinar magna. Donec placerat
+      lectus nec ligula scelerisque scelerisque. Nulla fringilla urna scelerisque nisi mollis ultrices. Curabitur
+      vulputate risus elementum, interdum dui quis, sodales risus.
+    </div>
+
+    <div class="product-price-in-info"><s>$190</s>&ensp;&ensp;$90</div>
+
+    <form class="product-color">
+      <label>Color:
+        <input type="radio" name="color" label="brown">
+        <input type="radio" name="color" label="green">
+        <input type="radio" name="color" label="black">
+        <input type="radio" name="color" label="grey">
+        <input type="radio" name="color" label="magenta">
+      </label>
+    </form>
+
+    <div class="product-actions-in-info">
+      <input type="number" name="product-quantity" value="1" min="1" max="100" step="1">
+      <ul>
+        <li><a href="#" class="add-to-cart-in-info">add to cart</a></li>
+        <li><a href="#" class="to-favorites-in-info"></a></li>
+        <li><a href="#" class="to-compare-in-info"></a></li>
+      </ul>
+    </div>
+    <div class="product-share">Share on:</div>
   </div>
 
 </div>
 
 
-<div class="decription-box container">
+<div class="description-tabs-box container">
 
   <div class="tabs">
     <input id="tab1" type="radio" name="tabs" checked>
@@ -428,6 +471,7 @@
 <script src="plugins/fancy/jquery.fancybox.js"></script>
 
 
+<!-- скрипт показу великих детальних фото продукту  -->
 <script type="text/javascript">
   $(function () {
     $('.product-preview .thumbs').slick({
