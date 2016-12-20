@@ -77,3 +77,31 @@
   line-height: 1.7143;
 }
 
+@media screen and (max-width: 851px) {
+  .hot-sales {
+    flex-wrap: wrap;
+  }
+
+  .hot-sales .block1 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .hot-sales .block2 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 651px) {
+
+  .hot-sales .block1 {
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 100%;
+    /*  flex-wrap: wrap;
+      flex-basis: 100%;
+      max-width: 100%;*/
+  }
+
+}

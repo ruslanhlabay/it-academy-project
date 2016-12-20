@@ -152,5 +152,21 @@
   color: #be926f;
 }
 
+@media screen and (max-width: 1100px) {
 
+  .featured-products-list {
+    flex-wrap: wrap;
+  }
 
+  .featured-product {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+
+  .featured-product {
+    flex-basis: 100%;
+  }
+
+}

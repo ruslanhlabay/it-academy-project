@@ -129,3 +129,22 @@
   color: #be926f;
 }
 
+@media screen and (max-width: 1160px) {
+
+  .new-posts-list {
+    flex-wrap: wrap;
+  }
+
+  .new-post-box {
+    flex-basis: 50%;
+  }
+
+}
+
+@media screen and (max-width: 610px) {
+
+  .new-post-box {
+    flex-basis: 100%;
+  }
+
+}

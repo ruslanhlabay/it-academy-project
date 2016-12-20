@@ -85,21 +85,20 @@
     <div class="thumbs">
 
       <a class=""
-         rel="group"
          href="images/product/details/product_image1.jpg"
          title="image1">
         <img src="images/product/details/product_image1_s.jpg" alt=""/>
       </a>
 
       <a class=""
-         rel="group"
+
          href="images/product/details/product_image2.jpg"
          title="image2">
         <img src="images/product/details/product_image2_s.jpg" alt=""/>
       </a>
 
       <a class=""
-         rel="group"
+
          href="images/product/details/product_image3.jpg"
          title="image3">
         <img src="images/product/details/product_image3_s.jpg" alt=""/>
@@ -107,14 +106,14 @@
 
 
       <a class=""
-         rel="group"
+
          href="images/product/details/product_image2.jpg"
          title="image2">
         <img src="images/product/details/product_image2_s.jpg" alt=""/>
       </a>
 
       <a class=""
-         rel="group"
+
          href="images/product/details/product_image3.jpg"
          title="image3">
         <img src="images/product/details/product_image3_s.jpg" alt=""/>
@@ -130,21 +129,43 @@
 
   <div class="product-info-block">
 
-
     <div class="product-rating">
-      <div class="rating">
-        <input type="radio" id="star5" name="rating" value="5"/><label for="star5" title="Rocks!">5 stars</label>
-        <input type="radio" id="star4" name="rating" value="4"/><label for="star4" title="Pretty good">4 stars</label>
-        <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="Meh">3 stars</label>
-        <input type="radio" id="star2" name="rating" value="2"/><label for="star2" title="Kinda bad">2 stars</label>
-        <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="Sucks big time">1 star</label>
-      </div>
+
+      <form>
+
+        <fieldset class="starability-basic">
+
+          <input type="radio" id="rate5" name="rating" value="5"/>
+          <label for="rate5" title="Amazing" aria-label="Amazing, 5 stars"></label>
+
+          <input type="radio" id="rate4" name="rating" value="4"/>
+          <label for="rate4" title="Very good" aria-label="Very good, 4 stars"></label>
+
+          <input type="radio" id="rate3" name="rating" value="3"/>
+          <label for="rate3" title="Average" aria-label="Average, 3 stars"></label>
+
+          <input type="radio" id="rate2" name="rating" value="2"/>
+          <label for="rate2" title="Not good" aria-label="Not good, 2 stars"></label>
+
+          <input type="radio" id="rate1" name="rating" value="1"/>
+          <label for="rate1" title="Terrible" aria-label="Terrible, 1 star"></label>
+        </fieldset>
+      </form>
+
       <div class="quantity-voices"> (23 review)</div>
     </div>
 
-    <div class="product-specifications">
-      <label><input type="checkbox">In stock</label>
-      SKU: SW108 Category: Chairs
+    <div class="product-specification">
+      <div class="availability-status">
+        <form class="availability">
+          <input type="checkbox" id="availability" checked/>
+          <label for="availability"></label>
+        </form>
+        <span>&ensp;In stock</span>
+      </div>
+
+      <div class="sku">SKU:&thinsp;<span>SW108</span></div>
+      <div class="category">Category:&thinsp;<span>Chairs</span></div>
     </div>
 
     <div class="product-short-description">Pellentesque at neque porta, auctor felis eu, pulvinar magna. Donec placerat
@@ -155,13 +176,19 @@
     <div class="product-price-in-info"><s>$190</s>&ensp;&ensp;$90</div>
 
     <form class="product-color">
-      <label>Color:
-        <input type="radio" name="color" label="brown">
-        <input type="radio" name="color" label="green">
-        <input type="radio" name="color" label="black">
-        <input type="radio" name="color" label="grey">
-        <input type="radio" name="color" label="magenta">
-      </label>
+      <span>Color:</span>
+      <input type="radio" class="radio" name="color" value="#be926f" id="brown" checked/>
+      <label for="brown" class="brown"></label>
+      <input type="radio" class="radio" name="color" value="#355e60" id="green"/>
+      <label for="green" class="green"></label>
+      <input type="radio" class="radio" name="color" value="#403634" id="black"/>
+      <label for="black" class="black"></label>
+      <input type="radio" class="radio" name="color" value="#807875" id="gray"/>
+      <label for="gray" class="gray"></label>
+      <input type="radio" class="radio" name="color" value="#ff3366" id="magenta"/>
+      <label for="magenta" class="magenta"></label>
+
+
     </form>
 
     <div class="product-actions-in-info">
@@ -172,7 +199,32 @@
         <li><a href="#" class="to-compare-in-info"></a></li>
       </ul>
     </div>
-    <div class="product-share">Share on:</div>
+
+
+    <div class="product-share">
+      Share on:
+
+      <div class="detail-social">
+        <ul>
+          <li>
+            <a href="http://google.com" class="detail-social-facebook" title="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com" class="detail-social-twitter" title="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="http://facebook.com" class="detail-social-google" title="google+">
+            </a>
+          </li>
+          <li>
+            <a href="http://facebook.com" class="detail-social-pinterest" title="pinterest">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
 </div>
