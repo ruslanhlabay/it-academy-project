@@ -317,7 +317,7 @@
     </div>
   </div>
 
-  <ul class="related-products-list">
+  <ul class="related-products-list sliderLast">
 
     <li class="featured-product">
       <div class="product-title">Denim Chart In Slim Fit</div>
@@ -382,6 +382,22 @@
         </div>
       </div>
       <div class="product-price"><s>$150</s>&emsp;$117</div>
+    </li>
+    <li class="featured-product">
+      <div class="product-title">Shayla Pendant Chair</div>
+      <div class="product-category">Bedroom</div>
+      <div class="product-actions">
+        <img src="images/product/product-item1.jpg" alt="Shayla Pendant Chair" width="210" height="210">
+        <div class="additional-links">
+          <a href="#" class="add-to-cart">add to cart</a>
+          <ul>
+            <li><a href="#" class="to-favorites"></a></li>
+            <li><a href="#" class="to-compare"></a></li>
+            <li><a href="#" class="zoom"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-price"><s>$100</s>&emsp;$92</div>
     </li>
   </ul>
 
@@ -523,33 +539,9 @@
 <script src="plugins/jquery-3.1.1.min.js"></script>
 <script src="plugins/slick/slick.min.js"></script>
 <script src="plugins/fancy/jquery.fancybox.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/productpreview.js"></script>
 
-
-<!-- скрипт показу великих детальних фото продукту  -->
-<script type="text/javascript">
-  $(function () {
-    $('.product-preview .thumbs').slick({
-      slidesToShow: 3,
-      vertical: true,
-      verticalSwiping: true,
-      arrows: false
-    });
-
-    $('.thumbs a').on('click', function (e) {
-      e.preventDefault();
-      var picLink = $(this).attr('href');
-      var $image = $('#product-image');
-      $image.fadeTo(200, 0, function () {
-        $image.attr('src', picLink);
-        $image.fadeTo(800, 1)
-      });
-      /*   $('#product-image').attr('src', picLink);*/
-
-    })
-
-  });
-
-</script>
 
 
 </body>
