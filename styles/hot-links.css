@@ -59,10 +59,25 @@
   border: 1px solid red;
 }*/
 
+@media screen and (max-width: 1160px) {
+
+  .hot-links-list {
+    flex-wrap: wrap;
+
+  }
+
+  .hot-links-list li {
+    flex-basis: 50%;
+    justify-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 610px) {
 
   .hot-links-list li {
     flex-basis: 100%;
+    justify-content: center;
   }
 
 }
+

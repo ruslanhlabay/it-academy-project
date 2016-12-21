@@ -8,22 +8,22 @@
   line-height: 2.267em; /*vertical-align*/
 }
 .header-top a {
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 14px;
+
 }
 
 .header-top span {
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #3b3b3b;
   font-size: 12px;
-  padding-top: 2px;
+  padding-top: 1px;
+
 }
 
 .header-top-phone {
   display: flex;
   flex-basis: 50%;
+  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
   font-style: normal;
-  color: #7f7f7f;
 }
 
 .header-top-phone a {
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
-  color: #666666;
+  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .header-top-userlinks a {
@@ -228,7 +228,7 @@
   .header-menu-container {
     padding: 5px 0 5px 0;
     flex-basis: 50%;
-    align-self: flex-start;
+    align-self: center;
   }
 
 }

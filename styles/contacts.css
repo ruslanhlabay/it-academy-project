@@ -1,16 +1,19 @@
 
 .contacts {
+  background-color: #ffffff;
   padding: 1em 0;
 }
 
 .contacts-list {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-around;
 }
 
 .contacts-list li {
   display: flex;
-  flex-basis: 25%;
+
+  flex-basis: 33%;
   text-align: center;
   justify-content: center;
 }
@@ -67,4 +70,25 @@
 
 .contacts-list .contacts-mail .icon {
   background-image: url(images/contacts/Mail.png);
+}
+
+@media screen and (max-width: 710px) {
+  .contacts-list {
+    flex-wrap: wrap;
+  }
+
+  .contacts-list li {
+
+    flex-basis: 100%;
+
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  /*.contacts li {
+    flex-basis: 50%;
+    justify-content: center;
+  }*/
 }

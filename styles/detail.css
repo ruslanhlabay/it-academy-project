@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  width: 670px;
+  max-width: 670px;
   height: 630px;
   overflow: hidden;
 }
@@ -120,6 +120,9 @@ section p {
   text-align: center;
   color: #666666;
   border: 1px solid #be926f;
+  border-top: 4px solid #be926f;
+  border-top: 3px solid red;
+  border: 1px solid #be926f;
   background: #ffffff;
   border-radius: 1px 1px 0 0;
 }
@@ -153,9 +156,14 @@ section p {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .tabs label {
-    padding: 15px;
+@media screen and (max-width: 600px) {
+  .description-tabs-box label {
+    display: none;
+  }
+
+  .description-tabs-box section {
+    margin-top: 15px;
+    display: block;
   }
 }
 

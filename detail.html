@@ -7,9 +7,11 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/detail.css">
   <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="plugins/fancy/jquery.fancybox.css" type="text/css" media="screen"/>
+  <!-- <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">-->
+  <!--  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>-->
+  <!--  <link rel="stylesheet" href="plugins/fancy/jquery.fancybox.css" type="text/css" media="screen"/>-->
 
 
 </head>
@@ -84,37 +86,27 @@
   <div class="product-preview">
     <div class="thumbs">
 
-      <a class=""
-         href="images/product/details/product_image1.jpg"
+      <a href="images/product/details/product_image1.jpg"
          title="image1">
         <img src="images/product/details/product_image1_s.jpg" alt=""/>
       </a>
 
-      <a class=""
-
-         href="images/product/details/product_image2.jpg"
+      <a href="images/product/details/product_image2.jpg"
          title="image2">
         <img src="images/product/details/product_image2_s.jpg" alt=""/>
       </a>
 
-      <a class=""
-
-         href="images/product/details/product_image3.jpg"
+      <a href="images/product/details/product_image3.jpg"
          title="image3">
         <img src="images/product/details/product_image3_s.jpg" alt=""/>
       </a>
 
-
-      <a class=""
-
-         href="images/product/details/product_image2.jpg"
+      <a href="images/product/details/product_image2.jpg"
          title="image2">
         <img src="images/product/details/product_image2_s.jpg" alt=""/>
       </a>
 
-      <a class=""
-
-         href="images/product/details/product_image3.jpg"
+      <a href="images/product/details/product_image3.jpg"
          title="image3">
         <img src="images/product/details/product_image3_s.jpg" alt=""/>
       </a>
@@ -194,7 +186,57 @@
     </form>
 
     <div class="product-actions-in-info">
-      <input type="number" name="product-quantity" value="1" min="1" max="100" step="1">
+
+
+      <!-- <input id="spinner">-->
+
+      <!--  <input id="spinner"
+               aria-valuemin="0"
+               aria-valuenow="10"
+               autocomplete="off"
+               class="ui-spinner-input"
+               role="spinbutton">
+
+        <a tabindex="-1"
+           aria-hidden="true"
+           class="ui-button ui-widget ui-spinner-button ui-spinner-up ui-corner-tr ui-button-icon-only"
+           role="button">
+          <span class="ui-button-icon ui-icon ui-icon-triangle-1-n"></span>
+          <span class="ui-button-icon-space"> </span>
+        </a>
+        <a tabindex="-1"
+           aria-hidden="true"
+           class="ui-button ui-widget ui-spinner-button ui-spinner-down ui-corner-br ui-button-icon-only"
+           role="button">
+          <span class="ui-button-icon ui-icon ui-icon-triangle-1-s"></span>
+          <span class="ui-button-icon-space"> </span>
+        </a>
+
+  -->
+
+
+      <form class="spinner">
+        <input type="text"
+               aria-valuemin="0"
+               aria-valuenow="10"
+               autocomplete="on"
+               class="ui-spinner-input"
+               role="spinbutton">
+
+        <button class="inc">+</button>
+        <button class="dec">-</button>
+      </form>
+
+
+      <!--  <div class="spinner">
+           <input type="text">
+         <div class="buttons">
+           <button class="inc">+</button>
+           <button class="dec">-</button>
+         </div>
+         <!--<input type="number" name="product-quantity" value="1" min="1" max="100" step="1">
+      </div>-->
+
       <ul>
         <li><a href="#" class="add-to-cart-in-info">add to cart</a></li>
         <li><a href="#" class="to-favorites-in-info"></a></li>
@@ -415,8 +457,8 @@
   </div>
 </div>
 
-<div class="subscription container">
-
+<div class="subscription">
+  <div class="container">
   <div class="subscription-newsletter">
     <h4>NEWSLETTER</h4>
     Keep up on our always evolving product features and technology.
@@ -429,7 +471,7 @@
       <button><span>SUBSCRIBE</span></button>
     </form>
   </div>
-
+</div>
 </div>
 
 <div class="hot-links">
@@ -459,7 +501,8 @@
   </div>
 </div>
 
-<div class="contacts container">
+<div class="contacts">
+  <div class="container">
   <ul class="contacts-list">
     <li class="contacts-call-us-phone">
       <a href="tel:1-800-277-7766">
@@ -483,6 +526,7 @@
       </a>
     </li>
   </ul>
+</div>
 </div>
 
 <footer class="footer">
@@ -537,11 +581,12 @@
 
 
 <script src="plugins/jquery-3.1.1.min.js"></script>
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <script src="plugins/slick/slick.min.js"></script>
 <script src="plugins/fancy/jquery.fancybox.js"></script>
 <script src="js/sliders.js"></script>
 <script src="js/productpreview.js"></script>
-
+<script src="js/spinner.js"></script>
 
 
 </body>

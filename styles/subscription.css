@@ -1,11 +1,16 @@
 
 .subscription {
-  margin-top: 1em;
-  margin-bottom: 50px;
+  /*   від маржинів проблема з фоном
+   margin-top: 1em;
+   margin-bottom: 50px;*/
+
+  padding-top: 15px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #666666;
+  background: #ffffff;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -20,13 +25,14 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 500px;
-  border: 1px solid orange;
+  border: 1px solid red;
   padding: 0 5px 0 5px;
 }
 
 .subscription-input {
   display: flex;
   flex: 1 1 640px;
+  flex-shrink: 0;
   align-self: center;
   justify-content: flex-end;
   font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -34,10 +40,12 @@
   font-size: 16px;
   line-height: 1.9375;
   margin: 0 0 0 5px;
+  border: 1px solid red;
 }
 
 .subscription-input input {
   max-width: 390px;
+  /*width: 100%;*/
   height: 52px;
   padding-left: 15px;
   margin-right: 14px;
@@ -57,4 +65,34 @@
   font-size: 18px;
   line-height: 1.72;
   color: #333333;
+}
+
+@media screen and (max-width: 860px) {
+
+  .subscription {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .subscription-newsletter {
+    justify-content: center;
+  }
+
+  .subscription-input {
+    justify-content: center;
+  }
+
+  .subscription-input button {
+    width: 80px;
+  }
+
+  .subscription-input span {
+    font-size: 0;
+
+  }
 }
