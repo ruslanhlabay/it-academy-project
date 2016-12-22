@@ -175,3 +175,16 @@
   }
 
 }
+
+@media screen and (max-width: 480px) {
+
+  .related-products-title > h2 {
+    flex-shrink: 0;
+    /* flex-basis: 100%;*/
+    flex-order: 0;
+  }
+
+  .related-products-title .arrow {
+    flex-order: 1;
+  }
+}

@@ -5,7 +5,19 @@ $(function () {
     slidesToShow: 3,
     vertical: true,
     verticalSwiping: true,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          vertical: false,
+          verticalSwiping: false,
+          dots: false
+        }
+      }
+    ]
   });
 
   $('.thumbs a').on('click', function (e) {

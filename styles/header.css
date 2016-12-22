@@ -161,7 +161,6 @@
   height: 22px;
   position: relative;
   font-size: 12px;
-
 }
 
 .header-cart .count {
@@ -225,10 +224,18 @@
     flex-flow: column;
   }
 
+  .menu-list a {
+    padding: 10px 100px 10px 0;
+  }
+
+  /*
+  .menu-list li:nth-of-type(even) {
+    margin-left: 20px;
+  }
+  */
   .header-menu-container {
     padding: 5px 0 5px 0;
-    flex-basis: 50%;
-    align-self: center;
+    flex-basis: 80%;
   }
 
 }

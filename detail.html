@@ -6,10 +6,13 @@
 
 
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/detail.css">
-  <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-  <!-- <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">-->
+  <link rel="stylesheet" href="styles/detail-responsive.css">
+
+
   <!--  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>-->
   <!--  <link rel="stylesheet" href="plugins/fancy/jquery.fancybox.css" type="text/css" media="screen"/>-->
 
@@ -54,7 +57,7 @@
 
     <nav class="header-menu-container">
       <ul class="menu-list">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Living room</a></li>
         <li><a href="#">Office</a></li>
         <li><a href="#">Bedroom</a></li>
@@ -84,31 +87,35 @@
 <div class="product-detail container">
 
   <div class="product-preview">
+
     <div class="thumbs">
 
       <a href="images/product/details/product_image1.jpg"
          title="image1">
-        <img src="images/product/details/product_image1_s.jpg" alt=""/>
+        <img src="images/product/details/product_image1.jpg"
+             alt=""/>
       </a>
 
       <a href="images/product/details/product_image2.jpg"
          title="image2">
-        <img src="images/product/details/product_image2_s.jpg" alt=""/>
+        <img src="images/product/details/product_image2.jpg"
+             alt=""/>
       </a>
 
       <a href="images/product/details/product_image3.jpg"
          title="image3">
-        <img src="images/product/details/product_image3_s.jpg" alt=""/>
+        <img src="images/product/details/product_image3.jpg"
+             alt=""/>
       </a>
 
       <a href="images/product/details/product_image2.jpg"
          title="image2">
-        <img src="images/product/details/product_image2_s.jpg" alt=""/>
+        <img src="images/product/details/product_image2.jpg" alt=""/>
       </a>
 
       <a href="images/product/details/product_image3.jpg"
          title="image3">
-        <img src="images/product/details/product_image3_s.jpg" alt=""/>
+        <img src="images/product/details/product_image3.jpg" alt=""/>
       </a>
 
     </div>
@@ -117,7 +124,9 @@
       <img id="product-image"
            src="images/product/details/product_image1.jpg" alt=""/>
     </div>
+
   </div>
+
 
   <div class="product-info-block">
 
@@ -187,8 +196,8 @@
 
     <div class="product-actions-in-info">
 
-
-      <!-- <input id="spinner">-->
+      <div class="add-to-cart-in-info">
+        <!--<input id="spinner">-->
 
       <!--  <input id="spinner"
                aria-valuemin="0"
@@ -215,17 +224,11 @@
   -->
 
 
-      <form class="spinner">
-        <input type="text"
-               aria-valuemin="0"
-               aria-valuenow="10"
-               autocomplete="on"
-               class="ui-spinner-input"
-               role="spinbutton">
-
-        <button class="inc">+</button>
-        <button class="dec">-</button>
-      </form>
+        <!--   <div class="myspinner">
+             <input id="spinner">
+             &lt;!&ndash; <button class="inc">+</button>
+              <button class="dec">-</button>&ndash;&gt;
+           </div>-->
 
 
       <!--  <div class="spinner">
@@ -237,11 +240,14 @@
          <!--<input type="number" name="product-quantity" value="1" min="1" max="100" step="1">
       </div>-->
 
+        <a href="#" class="add-to-cart-in-info">add to cart</a>
+      </div>
       <ul>
-        <li><a href="#" class="add-to-cart-in-info">add to cart</a></li>
+
         <li><a href="#" class="to-favorites-in-info"></a></li>
         <li><a href="#" class="to-compare-in-info"></a></li>
       </ul>
+
     </div>
 
 
@@ -337,26 +343,26 @@
 
 </div>
 
-
 <div class="related-products container">
 
   <div class="related-products-title">
 
-    <div class="arrow left-arrow">
-      <a href="">
-        <div class="icon"></div>
-        &ensp;&ensp;prev
-      </a>
-    </div>
+    <!-- <div class="arrow left-arrow">
+       <a href="">
+         <div class="icon"></div>
+         &ensp;&ensp;prev
+       </a>
+     </div>
 
-    <h2>RELATED PRODUCTS</h2>
+     <h2>RELATED PRODUCTS</h2>
 
-    <div class="arrow right-arrow">
-      <a href="">
-        next&ensp;&ensp;
-        <div class="icon"></div>
-      </a>
-    </div>
+     <div class="arrow right-arrow">
+       <a href="">
+         next&ensp;&ensp;
+         <div class="icon"></div>
+       </a>
+     </div>-->
+
   </div>
 
   <ul class="related-products-list sliderLast">
@@ -459,19 +465,18 @@
 
 <div class="subscription">
   <div class="container">
-  <div class="subscription-newsletter">
-    <h4>NEWSLETTER</h4>
-    Keep up on our always evolving product features and technology.
-    Enter your e-mail and subscribe to our newsletter.
-  </div>
+    <div class="subscription-newsletter">
+      <h4>NEWSLETTER</h4>
+      Keep up on our always evolving product features and technology.
+      Enter your e-mail and subscribe to our newsletter.
+    </div>
 
-  <div class="subscription-input">
-    <form action="#" class="signup">
+    <form action="#" class="subscription-input">
       <input type="email" placeholder="Email address" id="EmailInput"/>
       <button><span>SUBSCRIBE</span></button>
     </form>
+
   </div>
-</div>
 </div>
 
 <div class="hot-links">

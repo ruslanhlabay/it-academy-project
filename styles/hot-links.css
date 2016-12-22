@@ -68,7 +68,9 @@
 
   .hot-links-list li {
     flex-basis: 50%;
-    justify-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 25px;
+    /* justify-items: flex-start;*/
   }
 }
 
@@ -77,6 +79,7 @@
   .hot-links-list li {
     flex-basis: 100%;
     justify-content: center;
+    padding-left: 0;
   }
 
 }

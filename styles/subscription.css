@@ -6,11 +6,15 @@
 
   padding-top: 15px;
   padding-bottom: 50px;
+  background: #ffffff;
+}
+
+.subscription .container {
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #666666;
-  background: #ffffff;
+
   font-size: 15px;
   line-height: 1.6;
 }
@@ -32,7 +36,7 @@
 .subscription-input {
   display: flex;
   flex: 1 1 640px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   align-self: center;
   justify-content: flex-end;
   font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -44,15 +48,18 @@
 }
 
 .subscription-input input {
-  max-width: 390px;
-  /*width: 100%;*/
+  /* max-width: 390px;*/
+
+  width: 65%;
   height: 52px;
   padding-left: 15px;
   margin-right: 14px;
+  overflow: hidden;
 }
 
 .subscription-input button {
   /*display: inline-block;*/
+  flex-shrink: 0;
   width: 200px;
   height: 52px;
   border: 1px solid #be926f;
@@ -67,32 +74,41 @@
   color: #333333;
 }
 
-@media screen and (max-width: 860px) {
-
-  .subscription {
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    justify-items: center;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 640px) {
-
-  .subscription-newsletter {
-    justify-content: center;
-  }
-
-  .subscription-input {
-    justify-content: center;
-  }
-
+@media screen and (max-width: 960px) {
   .subscription-input button {
     width: 80px;
   }
 
   .subscription-input span {
     font-size: 0;
-
   }
+}
+
+
+
+@media screen and (max-width: 860px) {
+
+  .subscription .container {
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+  }
+
+
+  .subscription-newsletter {
+    justify-content: center;
+    text-align: justify;
+  }
+
+  .subscription-newsletter h4 {
+    text-align: center;
+  }
+
+  .subscription-input {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+
 }
