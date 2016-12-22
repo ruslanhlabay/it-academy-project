@@ -93,6 +93,20 @@
   transition: opacity 0.2s;
 }
 
+.product-actions .on-sale {
+  position: absolute;
+  top: -13px;
+  right: -20px;
+  width: 41px;
+  height: 41px;
+  background-color: #be926f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
 .product-actions .additional-links {
   opacity:0;
   position: absolute;
@@ -176,15 +190,3 @@
 
 }
 
-@media screen and (max-width: 480px) {
-
-  .related-products-title > h2 {
-    flex-shrink: 0;
-    /* flex-basis: 100%;*/
-    flex-order: 0;
-  }
-
-  .related-products-title .arrow {
-    flex-order: 1;
-  }
-}
