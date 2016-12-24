@@ -73,7 +73,7 @@
   background-image: url(images/contacts/Mail.png);
 }
 
-.contacts-list li:hover .contacts-list li a address {
+.contacts-list li:hover .contacts-list .address {
   color: #be926f;
 }
 

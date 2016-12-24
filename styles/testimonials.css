@@ -1,25 +1,21 @@
 
-
 .testimonials {
-  background-color: rgb(41, 41, 41);
-  color: white;
+  background-color: #292929;;
+  color: #ffffff;
 }
 
 .container-testimonials {
-
-  max-width: 845px;
-  margin: 0 auto;
-}
-
-.testimonials .container-testimonials, .testimonials-text {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*max-width: 845px;*/
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
 }
 
+.container-testimonials div {
+  align-self: center;
+}
 
 .testimonials h3 {
   font-family: 'Montserrat-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -29,7 +25,7 @@
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1.5;
-
+  align-self: center;
 }
 
 .testimonials-line {
@@ -39,6 +35,7 @@
 }
 
 .testimonials-text {
+  display: block;
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 17px;
   color: #cccccc;
@@ -56,5 +53,4 @@
   margin: 2em;
   transform-origin: center center;
   transform: rotate(45deg);
-
 }
