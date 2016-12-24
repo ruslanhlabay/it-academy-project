@@ -45,7 +45,8 @@
   font-style: normal;
   font-size: 14px;
   line-height: 2.14;
-  color: #be926f;
+  color: #666666;
+  /*color: #be926f;*/
 }
 
 .contacts-call-us-phone {
@@ -71,6 +72,11 @@
 .contacts-list .contacts-mail .icon {
   background-image: url(images/contacts/Mail.png);
 }
+
+.contacts-list li:hover .contacts-list li a address {
+  color: #be926f;
+}
+
 
 @media screen and (max-width: 710px) {
   .contacts-list {

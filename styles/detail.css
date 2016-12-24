@@ -1,7 +1,3 @@
-@import url('product-info-block.css');
-@import url('starrating.css');
-
-
 body {
   background: #f7f7f7;
 }
@@ -83,25 +79,22 @@ body {
   margin-bottom: 60px;
 }
 
-/* Базовый контейнер табов */
+
 .tabs {
-  /*  min-width: 320px;
-  max-width: 800px;
-   padding: 0px;
-   margin: 0 auto;*/
+
 }
 
-/* стили секций с содержанием */
 section {
   display: none;
-  padding: 20px 15px 40px 20px;
+  padding: 0 15px 0 20px;
   line-height: 1.5;
   background: #ffffff;
   border: 1px solid #be926f;
 }
 
-section h4 {
+section > h4 {
   font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
   color: #333333;
 }
 
@@ -110,13 +103,14 @@ section p {
   font-size: 16px;
   color: #666666;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .tabs input {
   display: none;
 }
 
-/* стили вкладок (табов) */
+
 .tabs label {
   display: inline-block;
   margin: 0 0 -1px;
@@ -125,29 +119,32 @@ section p {
   text-align: center;
   color: #666666;
   border: 1px solid #be926f;
-  border-top: 4px solid #be926f;
-  border-top: 3px solid red;
-  border: 1px solid #be926f;
+  box-shadow: inset 0 4px 0 #ffffff;
   background: #ffffff;
   border-radius: 1px 1px 0 0;
+  transition: color 90ms, border 80ms, box-shadow 80ms;
 }
 
-/* изменения стиля заголовков вкладок при наведении */
 .tabs label:hover {
   color: #333333;
   cursor: pointer;
 }
 
-/* стили для активной вкладки */
 .tabs input:checked + label {
   color: #be926f;
   border: 1px solid #be926f;
-  border-top: 4px solid #be926f;
+  box-shadow: inset 0 4px 0 #be926f;
   border-bottom: 1px solid #ffffff;
-
+  border-radius: 0 0 2px 2px;
 }
 
-/* активация секций с помощью переключателя :checked */
+/*
+
+.tabs input:checked + label:nth-child(1) {
+    border-radius: 0 0 1px 3px;
+}
+*/
+
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3 {
@@ -171,49 +168,5 @@ section p {
   }
 }
 
-.product-share {
-  display: flex;
-  height: 40px;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 40px;
-  color: #333333;
-}
 
-.detail-social {
-  width: 200px;
-  margin-left: 10px;
-}
-
-.detail-social ul {
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
-}
-
-.detail-social a {
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
-
-.detail-social-google {
-  background: url(images/icons-socials/google.png) no-repeat center center;
-  transition: background 250ms;
-}
-
-.detail-social-twitter {
-  background: url(images/icons-socials/twitter.png) no-repeat center center;
-  transition: background 250ms;
-}
-
-.detail-social-facebook {
-  background: url(images/icons-socials/facebook.png) no-repeat center center;
-  transition: background 250ms;
-}
-
-.detail-social-pinterest {
-  background: url(images/icons-socials/pinterest.png) no-repeat center center;
-  transition: background 250ms;
-}
 

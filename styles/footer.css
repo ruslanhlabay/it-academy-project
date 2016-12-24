@@ -48,17 +48,17 @@
 
 .footer-social-google {
   background: url(images/footer/google.png) no-repeat center center;
-  transition: background 250ms;
+  transition: background 300ms;
 }
 
 .footer-social-twitter {
   background: url(images/footer/twitter.png) no-repeat center center;
-  transition: background 250ms;
+  transition: background 300ms;
 }
 
 .footer-social-facebook {
   background: url(images/footer/facebook.png) no-repeat center center;
-  transition: background 250ms;
+  transition: background 300ms;
 }
 
 .footer-social-google:hover {

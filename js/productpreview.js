@@ -29,8 +29,6 @@ $(function () {
       $image.fadeTo(800, 1)
     });
     /*   $('#product-image').attr('src', picLink);*/
-
   })
-
 });
 
