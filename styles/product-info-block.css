@@ -13,7 +13,7 @@
 }
 
 .product-name-in-info {
-  font-family: 'Montserrat-SemiBold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 600;
   font-size: 30px;
   line-height: 0.8;
   color: #232323;
@@ -22,12 +22,9 @@
 
 
 .product-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 16px;
   line-height: 0.9;
   color: #999999;
@@ -37,24 +34,18 @@
 
 .quantity-voices {
   padding-left: 5px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 
 .product-specification {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 1;
   flex-shrink: 1;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 15px;
+  line-height: 1.08;
   color: #333333;
   margin-bottom: 25px;
 
@@ -64,27 +55,26 @@
 
 .availability-status {
   /*display: inline-block;*/
-  /*display: flex;*/
+  display: flex;
 }
 
 .availability {
   display: inline-block;
   position: relative;
   width: 20px;
-  min-height: 18px;
+  min-height: 19px;
 }
 
 .availability > input {
-
   position: absolute;
-  /*margin-right: -100%;*/
+  margin-right: -100%;
   opacity: 0;
 }
 
 .availability > label {
   position: relative;
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 1px;
   float: right;
   width: 20px;
   height: 18px;
@@ -95,7 +85,7 @@
 
 
 .product-short-description {
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 15px;
   text-align: justify;
   color: #666666;
@@ -103,7 +93,7 @@
 }
 
 .product-price-in-info {
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 27px;
   line-height: 1.2;
   color: #ff0000;
@@ -111,6 +101,7 @@
 }
 
 .product-price-in-info s {
+  font-weight: 200;
   color: #cccccc;
 }
 
@@ -124,7 +115,7 @@
 }
 
 .product-color span {
-  margin-right: 20px;
+  margin-right: 15px;
   color: #333333;
 }
 
@@ -144,7 +135,7 @@
 
 .product-color .radio:not(checked) + label {
   position: relative;
-  padding: 0 0 0 38px;
+  padding: 0 38px 0 0;
 }
 
 .product-color .radio:not(checked) + label:before {
@@ -200,19 +191,17 @@
 
 
 .product-actions-in-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 60px;
   max-width: 415px;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 26px;
   color: #333333;
   margin-bottom: 60px;
 }
 
 .spinner .ui-spinner {
-  width: 86px;
+  width: 89px;
   height: 60px;
   border: 1px solid #cccccc;
   border-radius: 0;
@@ -221,18 +210,17 @@
 }
 
 .spinner .ui-spinner input {
-  width: 61px;
+  width: 60px;
   height: 44px;
   text-align: center;
   font-size: 26px;
   margin: 0;
-  font-weight: normal;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif
+  font-weight: 400;
 }
 
 .spinner .ui-spinner .ui-button {
   border-bottom: 1px solid #cccccc;
-  width: 28px;
+  width: 29px;
 }
 
 
@@ -254,15 +242,13 @@
 
 
 .product-actions-in-info ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+
   justify-content: space-between;
 }
 .product-actions-in-info ul li {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 
@@ -273,6 +259,7 @@
   display: block;
   line-height: 60px;
   text-align: center;
+  font-weight: 400;
   font-size: 19px;
   text-transform: uppercase;
   color: #f7f7f7;
@@ -303,11 +290,9 @@
 }
 
 .product-share {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 40px;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 40px;
   color: #333333;
@@ -320,7 +305,7 @@
 
 .detail-social li {
   display: inline-block;
-  padding-left: 15px;
+  padding-left: 12px;
   -webkit-transition: padding-left 250ms;
   transition: padding-left 250ms;
 }

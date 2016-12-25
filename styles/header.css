@@ -21,7 +21,7 @@
 .header-top-phone {
   display: flex;
   flex-basis: 50%;
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 14px;
   font-style: normal;
 }
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .header-top-userlinks a {
@@ -49,7 +49,7 @@
 
 .header {
   background: #232323;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
@@ -79,8 +79,8 @@
   justify-content: flex-end;
   flex-basis: 50%;
   flex-grow: 0;
-  padding-top: 24px;
-  /* border: 1px solid red;*/
+  padding-top: 30px;
+  border: 1px solid red;
 }
 
 .search-form {
@@ -88,18 +88,44 @@
 }
 
 .search-input {
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 13px;
-  color: #666666;
-  line-height: 1.8462;
   display: block;
   padding: 10px 40px 10px 35px;
   background: #232323;
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.8462;
   height: 44px;
   width: 274px;
   border: 1px solid #323232;
   border-radius: 44px;
 }
+
+.search-input::-webkit-input-placeholder {
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.8462;
+}
+
+.search-input:-ms-input-placeholder {
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.8462;
+}
+
+.search-input::-moz-placeholder {
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.8462;
+}
+
 
 .search-button {
   display: block;
@@ -120,9 +146,9 @@
 .header-menu-container {
   display: flex;
   /*padding: 10px 0 10px 0;*/
-  flex-basis: 55%;
+  flex-basis: 53%;
   flex-grow: 0;
-  /*  border: solid 1px yellow;*/
+  border: solid 1px yellow;
   margin-bottom: 38px;
 }
 
@@ -134,6 +160,7 @@
 
 .menu-list a {
   color: #ffffff;
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -150,12 +177,15 @@
 .header-cart-container {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   flex-grow: 1;
-  padding: 0 15px;
-  /*  border: solid 1px lightgreen;*/
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border: solid 1px lightgreen;
 }
 
 .header-cart {
+  display: block;
   background: url(images/header/icon-cart.png) center center no-repeat;
   width: 17px;
   height: 22px;
@@ -234,7 +264,7 @@
   }
   */
   .header-menu-container {
-    padding: 5px 0 5px 0;
+    padding: 5px 0 0 0;
     flex-basis: 80%;
   }
 

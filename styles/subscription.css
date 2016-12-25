@@ -1,9 +1,8 @@
 
 .subscription {
-  /*   від маржинів проблема з фоном
+  /*   від маржинів проблема з фоном !!!!!!!!!!!!!!!!!!
    margin-top: 1em;
    margin-bottom: 50px;*/
-
   padding-top: 15px;
   padding-bottom: 50px;
   background: #ffffff;
@@ -12,14 +11,14 @@
 .subscription .container {
   display: flex;
   justify-content: space-between;
-  font-family: 'Montserrat-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
   color: #666666;
-
   font-size: 15px;
   line-height: 1.6;
 }
 
 .subscription-newsletter h4 {
+  font-weight: 400;
   font-size: 18px;
   color: #333333;
   line-height: 1.3333;
@@ -29,56 +28,60 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 500px;
-  border: 1px solid red;
   padding: 0 5px 0 5px;
 }
 
 .subscription-input {
+
   display: flex;
   flex: 1 1 640px;
   flex-shrink: 1;
   align-self: center;
   justify-content: flex-end;
-  font-family: 'Montserrat-Light', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #cccccc;
-  font-size: 16px;
-  line-height: 1.9375;
+
   margin: 0 0 0 5px;
-  border: 1px solid red;
 }
 
 .subscription-input input {
   /* max-width: 390px;*/
-
   width: 65%;
   height: 52px;
   padding-left: 15px;
   margin-right: 14px;
   overflow: hidden;
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.9375;
+
 }
 
 .subscription-input button {
   /*display: inline-block;*/
+
   flex-shrink: 0;
   width: 200px;
   height: 52px;
+  font-family: Montserrat, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.72;
+  color: #333333;
   border: 1px solid #be926f;
-  background: url(images/icons/subscribe-icon.png) no-repeat 20px center;
-  background-color: #f8f8f8;
+  background: #f8f8f8 url(images/icons/subscribe-icon.png) no-repeat 20px center;
+  /*background-color: #f8f8f8;*/
 }
 
 .subscription-input span {
   margin-left: 35px;
-  font-size: 18px;
-  line-height: 1.72;
-  color: #333333;
+
 }
 
 @media screen and (max-width: 960px) {
   .subscription-input button {
     width: 80px;
   }
-
   .subscription-input span {
     font-size: 0;
   }
@@ -94,21 +97,16 @@
     justify-items: center;
     justify-content: center;
   }
-
-
   .subscription-newsletter {
     justify-content: center;
     text-align: justify;
   }
-
   .subscription-newsletter h4 {
     text-align: center;
   }
-
   .subscription-input {
     justify-content: center;
     margin-top: 15px;
   }
-
 
 }
