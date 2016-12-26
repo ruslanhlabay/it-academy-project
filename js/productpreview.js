@@ -8,7 +8,7 @@ $(function () {
     arrows: false,
     responsive: [
       {
-        breakpoint: 730,
+        breakpoint: 1051,
         settings: {
           slidesToShow: 1,
           infinite: true,

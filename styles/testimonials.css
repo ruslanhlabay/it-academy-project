@@ -1,5 +1,6 @@
 
 .testimonials {
+  /*margin-top: 60px;*/
   background-color: #292929;;
   color: #ffffff;
 }
@@ -10,7 +11,7 @@
   justify-content: center;
   /*max-width: 845px;*/
   padding: 0 15px 0 15px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 
 .container-testimonials div {

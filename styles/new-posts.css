@@ -1,5 +1,4 @@
 .new-posts {
-
   display: flex;
   flex-direction: column;
   /*border-top: 1px solid #e6e6e6;*/
@@ -11,7 +10,7 @@
 
 .new-posts-title, .related-products-title-string {
 
-  /* margin-bottom: 30px;*/
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -21,7 +20,7 @@
 
 .new-posts-title a, .related-products-title-string a {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999;
   text-decoration: none;
   position: relative;
@@ -34,7 +33,7 @@
 }*/
 
 .related-products-title-string .left-arrow, .related-products-title-string .right-arrow {
-  padding-top: 7px;
+  padding-top: 2px;
 }
 
 
@@ -84,22 +83,7 @@
   transition: all 0.5s ease-in-out;
 }
 */
-
-@keyframes left-arrow-animation {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: yellow;
-  }
-  50% {
-    background-color: blue;
-  }
-  100% {
-    background-color: green;
-  }
-}
-
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 .related-products-title-string a:hover {
   transform: scale(1.2, 1.2);
 }
@@ -189,8 +173,19 @@
 }
 */
 
-.new-posts-title h2,
-.related-products-title-string {
+.related-products-title {
+  margin-top: 0;
+  /*display: flex;*/
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  line-height: 0.8;
+  /*text-transform: lowercase;*/
+  font-variant: all-small-caps;
+  color: #333333;
+}
+
+.new-posts-title h2 {
   margin-top: 0;
   display: flex;
   font-weight: bold;
@@ -204,9 +199,9 @@
 
 .new-posts-list, .related-products-list {
   padding-top: 1.4667em;
-  display: flex;
-  justify-content: space-between;
-  max-height: 382px;
+  /*  display: flex;
+    justify-content: space-between;*/
+
 }
 
 .new-post-box {
@@ -274,30 +269,31 @@
   color: #be926f;
 }
 
-@media screen and (max-width: 1160px) {
-
+@media screen and (max-width: 1115px) {
   .new-posts-list {
     flex-wrap: wrap;
   }
-
   .new-post-box {
     flex-basis: 50%;
   }
-
 }
 
 @media screen and (max-width: 610px) {
-
   .new-post-box {
     flex-basis: 100%;
   }
-
 }
 
-@media screen and (max-width: 480px) {
-  .related-products-title-string {
-    font-size: 1em;
+@media screen and (max-width: 500px) {
+  .related-products-title {
+    font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
+@media screen and (max-width: 430px) {
+  .related-products-title {
+    font-size: 17px;
+    width: 80px;
+  }
+}

@@ -3,14 +3,12 @@ body {
 }
 
 .description-title {
-
   background-color: #e7e7e7;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
   padding: 50px 10px 45px 30px;
-
 }
 .description-title h1 {
   font-weight: 400;
@@ -29,6 +27,7 @@ body {
   color: #666666;
 }
 
+
 .product-detail {
   display: flex;
   justify-content: space-between;
@@ -41,11 +40,11 @@ body {
   flex-shrink: 0;
   justify-content: space-between;
   width: 670px;
-  max-height: 630px;
+  height: 600px;
   overflow: hidden;
-
   border: 1px solid red;
 }
+
 .product-preview .thumbs {
   width: 140px;
   margin-top: -15px;
@@ -63,15 +62,19 @@ body {
   margin: 15px 0;
 }
 .product-preview .product-image {
+  /*display: flex;*/
   width: 500px;
   height: 600px;
   background: #cccccc;
   border: 4px solid #be926f;
   overflow: hidden;
+  margin-left: 30px;
 }
 .product-preview .product-image img {
+  display: block;
   width: 100%;
   height: 100%;
+  /*height: 600px;*/
   object-fit: cover;
   /*object-fit: scale-down;*/
   object-position: center center;
@@ -86,24 +89,32 @@ body {
 
 section {
   display: none;
-  padding: 0 15px 0 20px;
+  padding: 14px 15px 0 20px;
   line-height: 1.5;
+  font-size: 16px;
+  text-align: justify;
   background: #ffffff;
   border: 1px solid #be926f;
 }
 
+
 section > h4 {
   font-weight: 400;
-  font-size: 16px;
   color: #333333;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 section p {
   font-weight: 200;
-  font-size: 16px;
   color: #666666;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+
+  margin: 24px 0;
+  line-height: 1.5em;
+  letter-spacing: 0;
   text-align: justify;
+
 }
 
 .tabs input {
@@ -113,7 +124,8 @@ section p {
 .tabs label {
   display: inline-block;
   margin: 0 0 -1px;
-  padding: 15px 25px 15px 25px;
+  /*padding: 15px 25px 15px 25px;*/
+  padding: 9px 20px;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
