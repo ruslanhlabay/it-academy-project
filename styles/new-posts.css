@@ -4,7 +4,7 @@
   /*border-top: 1px solid #e6e6e6;*/
 }
 
-.new-posts > .container, .related-products > .container {
+.new-posts > .container {
   border-top: 1px solid #e6e6e6;
 }
 
@@ -196,14 +196,11 @@
   color: #232323;
 }
 
-
-.new-posts-list, .related-products-list {
+.new-posts-list {
   padding-top: 22px;
   /*  display: flex;
     justify-content: space-between;*/
-
 }
-
 .new-post-box {
   display: flex;
   flex-flow: column;

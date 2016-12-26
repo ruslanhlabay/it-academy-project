@@ -1,44 +1,23 @@
-.featured-products, .bestseller, .related-products {
-
+.related-products {
   /*  display: flex;
     flex-direction: column;*/
   margin-bottom: 30px;
 }
 
-/*фіксована висота  щоб забрати глюк зі слайдером*/
-.related-products-list {
-  height: 404px;
-}
+.related-product {
+  margin-top: 10px;
 
-.featured-products-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
-}
-
-.featured-product {
-  /*margin-top: 10px;*/
   /* flex-basis: 25%;
    flex-shrink: 0;*/
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
   text-align: center;
   background-color: #ffffff;
-  height: 376px;
 
 }
 
-.featured-product + .featured-product {
+.related-product + .related-product {
   border-left: none;
-}
-
-.product-list-title {
-  /*flex-basis: 100%;*/
-  font-size: 17px;
-  line-height: 1.2941;
-  font-weight: bold;
-  color: #232323;
 }
 
 .product-title {
