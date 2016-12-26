@@ -1,12 +1,9 @@
 .product-info-block {
-
-   display: flex;
+  display: flex;
   flex-direction: column;
-
   padding: 0 30px 0 30px;
-
   transition: padding 300ms;
-  border: 1px solid red
+  /*border: 1px solid red*/
 }
 
 .product-name-in-info {
@@ -46,7 +43,7 @@
   color: #333333;
   margin-bottom: 25px;
 
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .product-specification span {

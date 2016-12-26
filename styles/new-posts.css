@@ -15,7 +15,7 @@
   justify-content: space-between;
   font-weight: bold;
   text-transform: uppercase;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .new-posts-title a, .related-products-title-string a {
@@ -198,7 +198,7 @@
 
 
 .new-posts-list, .related-products-list {
-  padding-top: 1.4667em;
+  padding-top: 22px;
   /*  display: flex;
     justify-content: space-between;*/
 

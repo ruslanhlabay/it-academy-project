@@ -80,7 +80,7 @@
   flex-basis: 50%;
   flex-grow: 0;
   padding-top: 30px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .search-form {
@@ -148,7 +148,7 @@
   /*padding: 10px 0 10px 0;*/
   flex-basis: 53%;
   flex-grow: 0;
-  border: solid 1px yellow;
+  /*border: solid 1px yellow;*/
   margin-bottom: 38px;
 }
 
@@ -181,7 +181,7 @@
   flex-grow: 1;
   margin-right: 10px;
   margin-bottom: 30px;
-  border: solid 1px lightgreen;
+  /*border: solid 1px lightgreen;*/
 }
 
 .header-cart {
