@@ -1,0 +1,41 @@
+.starability-basic {
+  display: block;
+  position: relative;
+  width: 110px;
+  min-height: 30px;
+  padding: 0 0 5px 0;
+  border: none;
+  margin-left: -5px;
+}
+
+.starability-basic > input {
+  position: absolute;
+  margin-right: -100%;
+  opacity: 0;
+}
+
+.starability-basic > input:checked ~ label,
+.starability-basic > input:focus ~ label {
+  background-position: 0 -15px;
+}
+
+.starability-basic > input:hover ~ label {
+  background-position: 0 -15px;
+}
+
+.starability-basic > input:focus + label {
+  outline: none;
+}
+
+.starability-basic > label {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 21px;
+  height: 15px;
+  color: transparent;
+  cursor: pointer;
+  background-image: url("images/icons/icons-stars.png");
+  background-repeat: no-repeat;
+}
+

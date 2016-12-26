@@ -13,7 +13,7 @@
 .contacts-list li {
   display: flex;
 
-  flex-basis: 33%;
+  /*flex-basis: 33%;*/
   text-align: center;
   justify-content: center;
 }

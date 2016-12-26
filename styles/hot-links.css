@@ -9,6 +9,9 @@
   line-height: 4;
 }
 
+.hot-links .container {
+}
+
 .hot-links-list {
   display: flex;
   justify-content: space-between;
@@ -16,17 +19,16 @@
 
 .hot-links-list li {
   display: flex;
-  /* flex-basis: 20%;*/
   text-align: center;
   justify-content: space-between;
   align-items: center;
   padding-left: 12px;
-  /*border: 1px solid red;*/
+
 }
 
 .hot-links-list .icon {
-  height: 36px;
-  width: 36px;
+  height: 40px;
+  width: 40px;
   border: 2px solid #be926f;
   background-repeat: no-repeat;
   background-position: center center;
@@ -49,29 +51,21 @@
   background-image: url(images/hotlinks/help-center-icon.png);
 }
 
-/*
-.hot-links-list .customer-support::before {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-
-  background: url(images/hotlinks/customer-support-icon.png) center center no-repeat;
-  border: 1px solid red;
-}*/
 
 @media screen and (max-width: 1160px) {
   .hot-links-list {
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .hot-links-list li {
-    flex-basis: 50%;
-    justify-content: flex-start;
-    /*padding-left: 25px;*/
 
+  .hot-links-list li {
+    padding: 0;
+    flex-basis: 50%;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 640px) {
   .hot-links-list {
     justify-content: center;
   }

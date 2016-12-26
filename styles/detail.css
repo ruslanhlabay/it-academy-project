@@ -2,6 +2,10 @@ body {
   background: #f7f7f7;
 }
 
+.a111 {
+  display: block;
+}
+
 .description-title {
   background-color: #e7e7e7;
   display: flex;
@@ -29,11 +33,11 @@ body {
   color: #666666;
 }
 
-.product-detail {
+.product-detail > .container {
   display: flex;
   justify-content: space-between;
   /*border: 1px solid green;*/
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .product-preview {

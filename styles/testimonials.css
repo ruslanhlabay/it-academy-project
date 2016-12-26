@@ -1,6 +1,5 @@
 
 .testimonials {
-  /*margin-top: 60px;*/
   background-color: #292929;;
   color: #ffffff;
 }
@@ -9,9 +8,8 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  /*max-width: 845px;*/
-  padding: 0 15px 0 15px;
-  margin: 60px auto 0;
+  padding: 50px 15px 0 15px;
+  margin: 0 auto 0;
 }
 
 .container-testimonials div {
@@ -21,7 +19,6 @@
 .testimonials h3 {
   font-size: 40px;
   font-weight: bold;
-  letter-spacing: 0;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1.5;
@@ -30,8 +27,9 @@
 
 .testimonials-line {
   width: 20px;
-  height: 2px;
+  height: 1px;
   border: 1px solid #be926f;
+  margin: 12px 0 17px 0;
 }
 
 .testimonials-text {
@@ -41,8 +39,7 @@
   color: #cccccc;
   line-height: 1.647;
   text-align: center;
-  padding-top: 1em;
-  /*  padding-bottom: 1em;*/
+
 }
 
 .testimonials-logo {
@@ -50,7 +47,7 @@
   height: 55px;
   width: 55px;
   border: 2px solid #be926f;
-  margin: 2em;
+  margin: 30px 0 40px 0;
   transform-origin: center center;
   transform: rotate(45deg);
 }

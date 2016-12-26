@@ -1,9 +1,8 @@
 .product-info-block {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   padding: 0 30px 0 30px;
   transition: padding 300ms;
-  /*border: 1px solid red*/
 }
 
 .product-name-in-info {
@@ -34,12 +33,12 @@
   display: flex;
   flex-shrink: 1;
   justify-content: space-between;
-
   font-weight: 200;
   font-size: 15px;
   line-height: 1.08;
   color: #333333;
   margin-bottom: 25px;
+
 
   /*border: 1px solid red;*/
 }
@@ -77,11 +76,12 @@
 }
 
 .product-short-description {
-  display: flex;
+  display: block;
   font-weight: 200;
   font-size: 15px;
   text-align: justify;
   color: #666666;
+
   margin-bottom: 20px;
 }
 
