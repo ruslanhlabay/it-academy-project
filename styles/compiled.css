@@ -1634,7 +1634,7 @@ div.slide1:nth-child(1) {
 
 @media screen and (max-width: 640px) {
   .footer-nav li {
-    padding-right: 15px;
+    padding-right: 5px;
   }
 }
 
@@ -2045,7 +2045,9 @@ section p {
   text-align: center;
   font-size: 26px;
   margin: 0;
+  padding-top: 13px;
   font-weight: 400;
+  outline: none;
 }
 
 .spinner .ui-spinner .ui-button {
@@ -2063,6 +2065,15 @@ section p {
   text-indent: 0;
   color: #666666;
 }
+
+.spinner .ui-spinner .ui-button:active {
+  border-radius: 0;
+  border: 1px solid #cccccc;
+  background: #f7f7f7;;
+
+}
+
+
 
 .spinner .ui-icon-triangle-1-s {
   margin-top: -10px;
@@ -2300,7 +2311,7 @@ section p {
   }
 
   .product-info-block {
-    padding: 0 5px 0 15px;
+    padding: 0 5px 0 5px;
   }
 }
 
@@ -2383,7 +2394,7 @@ section p {
   }
 
   .spinner .ui-spinner {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 
   .product-actions-in-info ul li {
@@ -2396,8 +2407,11 @@ section p {
     text-align: center;
   }
 
+  .product-share {
+    font-size: 18px;
+  }
   .detail-social li {
-    padding-left: 5px;
+    padding-left: 4px;
   }
 
   .container-testimonials > h3 {

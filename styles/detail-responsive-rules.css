@@ -56,7 +56,7 @@
   }
 
   .product-info-block {
-    padding: 0 5px 0 15px;
+    padding: 0 5px 0 5px;
   }
 }
 
@@ -130,7 +130,7 @@
   }
 
   .spinner .ui-spinner {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 
   .product-actions-in-info ul li {
@@ -143,8 +143,11 @@
     text-align: center;
   }
 
+  .product-share {
+    font-size: 18px;
+  }
   .detail-social li {
-    padding-left: 5px;
+    padding-left: 4px;
   }
 
   .container-testimonials > h3 {
