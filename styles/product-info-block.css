@@ -1,6 +1,4 @@
 .product-info-block {
-  /*display: flex;*/
-  /*flex-direction: column;*/
   padding: 0 30px 0 30px;
   transition: padding 300ms;
 }
@@ -230,11 +228,8 @@
 .spinner .ui-spinner .ui-button:active {
   border-radius: 0;
   border: 1px solid #cccccc;
-  background: #f7f7f7;;
-
+  background: #f7f7f7;
 }
-
-
 
 .spinner .ui-icon-triangle-1-s {
   margin-top: -10px;
@@ -302,10 +297,6 @@
   color: #333333;
 }
 
-.detail-social {
-  /*width: 200px;*/
-  /*margin-left: 10px;*/
-}
 
 .detail-social li {
   display: inline-block;
@@ -321,44 +312,36 @@
 
 .detail-social-google {
   background: url(images/icons-socials/google.png) no-repeat center center;
-  -webkit-transition: background 250ms;
   transition: background 250ms;
 }
 
 .detail-social-twitter {
   background: url(images/icons-socials/twitter.png) no-repeat center center;
-  -webkit-transition: background 250ms;
   transition: background 250ms;
 }
 
 .detail-social-facebook {
   background: url(images/icons-socials/facebook.png) no-repeat center center;
-  -webkit-transition: background 250ms;
   transition: background 250ms;
 }
 
 .detail-social-pinterest {
   background: url(images/icons-socials/pinterest.png) no-repeat center center;
-  -webkit-transition: background 250ms;
   transition: background 250ms;
 }
 
 .detail-social-google:hover {
   background: url(images/icons-socials/google-hover.png) no-repeat center center;
-
 }
 
 .detail-social-twitter:hover {
   background: url(images/icons-socials/twitter-hover.png) no-repeat center center;
-
 }
 
 .detail-social-facebook:hover {
   background: url(images/icons-socials/facebook-hover.png) no-repeat center center;
-
 }
 
 .detail-social-pinterest:hover {
   background: url(images/icons-socials/pinit-hover.png) no-repeat center center;
-
 }

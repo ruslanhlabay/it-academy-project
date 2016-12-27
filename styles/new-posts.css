@@ -175,13 +175,10 @@
 
 .related-products-title {
   margin-top: 0;
-  /*display: flex;*/
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
-  line-height: 0.8;
-  text-transform: uppercase;
-  /*font-variant: all-small-caps;*/
+  line-height: 1.2;
   color: #333333;
 }
 
