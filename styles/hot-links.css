@@ -2,10 +2,8 @@
   background: #f8f8f8;
   color: #333333;
   border-top: 1px solid #e8e8e8;
-  /* padding-top: 0.933em;
-   padding-bottom: 0.933em;*/
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 18px;
   line-height: 4;
 }
 
@@ -15,6 +13,8 @@
 .hot-links-list {
   display: flex;
   justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .hot-links-list li {
@@ -22,7 +22,7 @@
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  padding-left: 12px;
+  /*padding-left: 12px;*/
 
 }
 
@@ -51,7 +51,6 @@
   background-image: url(images/hotlinks/help-center-icon.png);
 }
 
-
 @media screen and (max-width: 1160px) {
   .hot-links-list {
     flex-wrap: wrap;
@@ -69,6 +68,7 @@
   .hot-links-list {
     justify-content: center;
   }
+
   .hot-links-list li {
     flex-basis: 100%;
     justify-content: center;

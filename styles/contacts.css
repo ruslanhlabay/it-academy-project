@@ -1,7 +1,8 @@
 
 .contacts {
   background-color: #ffffff;
-  padding: 1em 0;
+  padding-top: 50px;
+  padding-bottom: 49px;
 }
 
 .contacts-list {
@@ -32,6 +33,7 @@
   font-style: normal;
   font-size: 24px;
   line-height: 1.41;
+  margin-top: 20px;
 }
 
 .contacts-list .contacts-location address {
@@ -39,6 +41,7 @@
   font-size: 14px;
   line-height: 2.14;
   color: #666666;
+  margin-top: 20px;
 }
 
 .contacts-list .contacts-mail address {
@@ -46,17 +49,14 @@
   font-size: 14px;
   line-height: 2.14;
   color: #666666;
+  margin-top: 20px;
   /*color: #be926f;*/
-}
-
-.contacts-call-us-phone {
-  font-style: normal;
 }
 
 .contacts-list .icon {
   width: 56px;
   height: 56px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -77,16 +77,13 @@
   color: #be926f;
 }
 
-
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 640px) {
   .contacts-list {
     flex-wrap: wrap;
   }
 
   .contacts-list li {
-
     flex-basis: 100%;
-
     justify-self: center;
     margin-top: 10px;
     margin-bottom: 20px;
